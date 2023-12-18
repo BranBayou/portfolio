@@ -9,7 +9,8 @@ module.exports = {
         aquab: '#00adb5',
         darkg: '#222831',
         darkw: '#393e46',
-        lightw: '#eeeeee'
+        lightw: '#eeeeee',
+        darkt: '#2d333b',
       }
     },
   },

@@ -11,7 +11,11 @@ module.exports = {
         darkw: '#393e46',
         lightw: '#eeeeee',
         darkt: '#2d333b',
-      }
+      },
+      width: {
+        fof: '45%',
+        fif: '55%',
+      },
     },
   },
   plugins: [],

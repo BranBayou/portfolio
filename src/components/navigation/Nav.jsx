@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { IoMenu, IoClose } from 'react-icons/io5';
+import { Link } from 'react-scroll';
 
 const NavLinks = () => (
   <>
-    <NavLink to="/about">About</NavLink>
-    <NavLink to="/works">Works</NavLink>
-    <NavLink to="/contact">Contact</NavLink>
+  <Link to='about' smooth={true} duration={500}>About</Link>
+  <Link to='skills' smooth={true} duration={500}>Skill</Link>
+  <Link to='works' smooth={true} duration={500}>Works</Link>
+  <Link to='contact' smooth={true} duration={500}>Contact</Link>
   </>
 );
 

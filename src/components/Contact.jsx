@@ -4,7 +4,7 @@ import Invite from './Contact/Invite';
 
 const Contact = () => {
   return (
-    <div className="w-10/12 h-screen mx-auto flex items-center justify-center gap-10">
+    <div id="contact" className="w-10/12 h-screen mx-auto flex items-center justify-center gap-10">
       <Invite />
       <Form />
     </div>

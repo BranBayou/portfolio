@@ -4,7 +4,7 @@ import Headline from './Headline/Headline';
 
 function Home() {
   return (
-    <div className="h-screen">
+    <div id="home" className="h-screen">
       <Header />
       <Headline />
     </div>

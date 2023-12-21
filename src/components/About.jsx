@@ -5,7 +5,7 @@ import Stack from './About/Stack';
 
 function About() {
   return (
-    <div className="h-screen w-10/12 mx-auto flex flex-col items-center justify-center relative">
+    <div id="about" className="h-screen w-10/12 mx-auto flex flex-col items-center justify-center relative">
       <div className="h-1/2 flex items-center justify-center">
         <Detail />    
         <Image />

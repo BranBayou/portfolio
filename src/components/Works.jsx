@@ -3,7 +3,7 @@ import WorksHeader from './works/WorksHeader';
 
 const Works = () => {
   return (
-    <div className="w-10/12 mx-auto">
+    <div id="works" className="w-10/12 mx-auto">
       <WorksHeader />
     </div>
   );

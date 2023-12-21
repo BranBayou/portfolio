@@ -5,7 +5,7 @@ import Image from './About/Image';
 function About() {
   return (
     <div id="about" className="h-screen w-10/12 mx-auto flex flex-col items-center justify-center relative">
-      <div className="h-1/2 flex items-center justify-center">
+      <div className="flex flex-col md:flex-row items-center justify-center">
         <Detail />    
         <Image />
       </div>

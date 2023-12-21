@@ -6,10 +6,10 @@ function ProfilePhoto() {
   return (
     <div className="w-1/2 flex items-center justify-center">
       <div className="">
-        <img className="w-72" src={bran} alt="avatar" />
+        <img className="w-52 md:w-72" src={bran} alt="avatar" />
       </div>
       <div className="">
-        <img className="w-12 absolute bottom-24 left-96 border" src={nextP} alt="next page" />
+        <img className="w-12 hidden md:block absolute bottom-24 left-96 border" src={nextP} alt="next page" />
       </div>
     </div>
   );

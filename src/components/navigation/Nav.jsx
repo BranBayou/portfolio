@@ -4,10 +4,10 @@ import { Link } from 'react-scroll';
 
 const NavLinks = () => (
   <>
-  <Link to='about' smooth={true} duration={500} className="hover:cursor-pointer hover:text-aquab hover:border-b hover:border-aquab hover:px-2">About</Link>
-  <Link to='skills' smooth={true} duration={500} className="hover:cursor-pointer hover:text-aquab hover:border-b hover:border-aquab hover:px-2">Skill</Link>
-  <Link to='works' smooth={true} duration={500} className="hover:cursor-pointer hover:text-aquab hover:border-b hover:border-aquab hover:px-2">Works</Link>
-  <Link to='contact' smooth={true} duration={500} className="hover:cursor-pointer hover:text-aquab hover:border-b hover:border-aquab hover:px-2">Contact</Link>
+  <Link to='about' smooth={true} duration={500} className="hover:cursor-pointer hover:text-aquab hover:border-b hover:border-aquab hover:px-2 transition-all duration-300 ease-linear">About</Link>
+  <Link to='skills' smooth={true} duration={500} className="hover:cursor-pointer hover:text-aquab hover:border-b hover:border-aquab hover:px-2 transition-all duration-300 ease-linear">Skill</Link>
+  <Link to='works' smooth={true} duration={500} className="hover:cursor-pointer hover:text-aquab hover:border-b hover:border-aquab hover:px-2 transition-all duration-300 ease-linear">Works</Link>
+  <Link to='contact' smooth={true} duration={500} className="hover:cursor-pointer hover:text-aquab hover:border-b hover:border-aquab hover:px-2 transition-all duration-300 ease-linear">Contact</Link>
   </>
 );
 

@@ -4,7 +4,7 @@ import { TbKeyframesFilled } from "react-icons/tb";
 import { GiSkills } from "react-icons/gi";
 
 
-const Stack = () => {
+const SkillsList = () => {
   return (
     <div className="h-1/2 w-4/5 mx-auto flex items-center justify-between border-t mt-5">
       <div className="flex flex-col items-center">
@@ -53,4 +53,4 @@ const Stack = () => {
   );
 };
 
-export default Stack;
+export default SkillsList;

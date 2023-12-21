@@ -1,7 +1,6 @@
 import React from 'react';
 import Detail from './About/Detail';
 import Image from './About/Image';
-import Stack from './About/Stack';
 
 function About() {
   return (
@@ -10,7 +9,6 @@ function About() {
         <Detail />    
         <Image />
       </div>
-      <Stack />
     </div>
   );
 }

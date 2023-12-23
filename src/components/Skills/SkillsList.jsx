@@ -1,54 +1,55 @@
 import React from 'react';
-import { RiCodeSSlashFill } from "react-icons/ri";
-import { TbKeyframesFilled } from "react-icons/tb";
-import { GiSkills } from "react-icons/gi";
-
+import { FaHtml5, FaReact, FaBootstrap, FaSass, FaLinux, FaGitAlt, FaGithub, FaJava } from "react-icons/fa";
+import { IoLogoCss3, IoLogoJavascript } from "react-icons/io";
+import { SiTailwindcss, SiRubyonrails } from "react-icons/si";
+import { DiRuby } from "react-icons/di";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { PiFileSql } from "react-icons/pi";
+import { TbBrandCpp } from "react-icons/tb";
 
 const SkillsList = () => {
   return (
-    <div className="h-1/2 w-4/5 mx-auto flex items-center justify-between border-t mt-5">
-      <div className="flex flex-col items-center">
-        <div className="flex items-center">
-          <RiCodeSSlashFill />
-          <p className="text-aquab text-2xl font-bold">Language</p>
-        </div>
+    <div className="h-screen w-4/5 mx-auto flex flex-col">
+      <details className="flex flex-col items-center">
+        <summary className="text-aquab text-2xl font-bold">
+          Language
+        </summary>
         <ul className="py-2">
-          <li className="py-1 hover:border-b">Css3</li>
-          <li className="py-1 hover:border-b">Heml5</li>
-          <li className="py-1 hover:border-b">C++</li>
-          <li className="py-1 hover:border-b">Java</li>
-          <li className="py-1 hover:border-b">Ruby</li>
-          <li className="py-1 hover:border-b">JavaScript</li>
+          <li className="py-1 hover:border-b"><IoLogoCss3 /></li>
+          <li className="py-1 hover:border-b"><FaHtml5 /></li>
+          <li className="py-1 hover:border-b"><TbBrandCpp /></li>
+          <li className="py-1 hover:border-b"><FaJava /></li>
+          <li className="py-1 hover:border-b"><DiRuby /></li>
+          <li className="py-1 hover:border-b"><IoLogoJavascript /></li>
+          <li className="py-1 hover:border-b"><BiLogoPostgresql /></li>
+          <li className="py-1 hover:border-b"><PiFileSql /></li>
         </ul>
-      </div>
-      <div className="flex flex-col items-center">
-        <div className="flex items-center">
-          <TbKeyframesFilled />
-          <p className="text-aquab text-2xl font-bold">Frameworks</p>
-        </div>
+      </details>
+      <details className="flex flex-col items-center">
+        <summary className="text-aquab text-2xl font-bold">
+          Frameworks
+        </summary>
         <ul className="py-2">
-          <li className="py-1 hover:border-b">React</li>
-          <li className="py-1 hover:border-b">Ruby on rails</li>
-          <li className="py-1 hover:border-b">Tailwind</li>
-          <li className="py-1 hover:border-b">Bootstrap</li>
-          <li className="py-1 hover:border-b">Capybara</li>
-          <li className="py-1 hover:border-b">Selenium</li>
+          <li className="py-1 hover:border-b"><FaReact /></li>
+          <li className="py-1 hover:border-b"><SiRubyonrails /></li>
+          <li className="py-1 hover:border-b"><SiTailwindcss /></li>
+          <li className="py-1 hover:border-b"><FaBootstrap /></li>
+          <li className="py-1 hover:border-b"><FaSass /></li>
         </ul>
-      </div>
-      <div className="flex flex-col items-center">
-        <div className="flex items-center">
-          <GiSkills />
-          <p className="text-aquab text-2xl font-bold">Proficiencies</p>
-        </div>
+      </details>
+      <details className="flex flex-col items-center">
+        <summary className="text-aquab text-2xl font-bold">
+          Proficiencies
+        </summary>
         <ul className="py-2">
-            <li className="py-1 hover:border-b">Git</li>
-            <li className="py-1 hover:border-b">GitHub</li>
+            <li className="py-1 hover:border-b"><FaGitAlt /></li>
+            <li className="py-1 hover:border-b"><FaGithub /></li>
             <li className="py-1 hover:border-b">API</li>
             <li className="py-1 hover:border-b">Web Development</li>
-            <li className="py-1 hover:border-b">Linux</li>
+            <li className="py-1 hover:border-b"><FaLinux /></li>
             <li className="py-1 hover:border-b">CLI</li>
           </ul>
-      </div>
+      </details>
     </div>
   );
 };

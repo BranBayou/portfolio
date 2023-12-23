@@ -4,7 +4,7 @@ import Showcase from './Showcase';
 const WorksHeader = () => {
   return (
     <div>
-      <div className="w-full my-24 flex items-center justify-center">
+      <div className="w-full flex items-center justify-center">
         <span className="">-------------------------</span>
        <h1 className="text-4xl">
          My recent <span className="text-aquab">works</span>

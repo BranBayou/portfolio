@@ -7,8 +7,8 @@ const Image = () => {
   return (
     <div>
       <img className="" src={seat} alt="seat" />
-      <img className="absolute right-36 top-0" src={note} alt="note" />
-      <img className="absolute left-0 top-0" src={bulb} alt="seat" />
+      <img className="absolute top-60 right-36 md:right-36 md:top-36" src={note} alt="note" />
+      <img className="absolute top-0  md:left-0 md:top-28" src={bulb} alt="seat" />
     </div>
   );
 };

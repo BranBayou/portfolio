@@ -11,22 +11,22 @@ const SkillsList = () => {
   return (
     <div className="h-screen flex flex-col">
       <details className="flex flex-col items-center" open>
-        <summary className="text-aquab text-2xl font-bold">
+        <summary className="text-2xl font-bold">
           Language
         </summary>
         <ul className="py-2 flex items-center justify-center gap-3 flex-wrap">
           <li className="bg-darkt"><IoLogoCss3 size={72} className="text-amber-600 p-1" /></li>
           <li className="bg-darkt"><FaHtml5 size={72} className="text-cyan-500 p-1" /></li>
+          <li className="bg-darkt"><IoLogoJavascript size={72} className="text-yellow-500 p-1" /></li>
           <li className="bg-darkt"><TbBrandCpp size={72} className="p-1" /></li>
           <li className="bg-darkt"><FaJava size={72} className="text-cyan-500 p-1" /></li>
           <li className="bg-darkt"><DiRuby size={72} className="text-red-600 p-1" /></li>
-          <li className="bg-darkt"><IoLogoJavascript size={72} className="text-yellow-500 p-1" /></li>
           <li className="bg-darkt"><BiLogoPostgresql size={72} className="text-cyan-500 p-1" /></li>
           <li className="bg-darkt"><PiFileSql size={72} className="p-1" /></li>
         </ul>
       </details>
       <details className="flex flex-col items-center">
-        <summary className="text-aquab text-2xl font-bold">
+        <summary className="text-2xl font-bold">
           Frameworks
         </summary>
         <ul className="py-2 flex items-center justify-center gap-3 flex-wrap">
@@ -38,7 +38,7 @@ const SkillsList = () => {
         </ul>
       </details>
       <details className="flex flex-col items-center">
-        <summary className="text-aquab text-2xl font-bold">
+        <summary className="text-2xl font-bold">
           Proficiencies
         </summary>
         <ul className="py-2 flex items-center justify-center gap-3 flex-wrap">

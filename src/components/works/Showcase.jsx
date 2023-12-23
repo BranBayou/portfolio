@@ -3,13 +3,13 @@ import Constant from './Constant';
 
 const Showcase = () => {
   return (
-    <div className="h-max w-full flex flex-col gap-12">
+    <div className="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 ib:grid-cols-3  gap-4">
       {Constant.map((data, index) => (
-        <div key={index} className={`h-2/5 flex flex-col md:flex-row gap-8 p-3 w-full`}>
-          <div className="imgDiv w-full md:w-fif">
+        <div key={index} className={``}>
+          <div className="">
             <img src={data.img[0]} className="w-full rounded-3xl" alt="img" />
           </div>
-          <div className="w-full md:w-fof flex flex-col justify-between rounded-3xl bg-darkt p-4">
+          <div className="">
             <div>
               <h1 className="text-2xl">{data.title}</h1>
               <p>{data.shortDes}</p>

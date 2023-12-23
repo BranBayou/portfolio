@@ -9,7 +9,7 @@ function ProfilePhoto() {
         <img className="w-52 md:w-72" src={bran} alt="avatar" />
       </div>
       <div className="">
-        <img className="w-12 hidden md:block absolute bottom-24 left-96 border" src={nextP} alt="next page" />
+        <img className="w-12 hidden md:block absolute bottom-24 left-1/2 border" src={nextP} alt="next page" />
       </div>
     </div>
   );

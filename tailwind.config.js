@@ -16,6 +16,12 @@ module.exports = {
         fof: '45%',
         fif: '55%',
       },
+      fontSize: {
+        xxs: '.5rem',
+      },
+      screens: {
+        ib: '900px',
+      },
     },
   },
   plugins: [],

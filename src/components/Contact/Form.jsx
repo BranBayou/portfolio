@@ -21,9 +21,9 @@ const  Form = () => {
   };
 
   return (
-    <div className="w-1/2">
-      <form onSubmit={handleSubmit} className="">
-        <div className="flex">
+    <div className="w-full md:w-1/2">
+      <form onSubmit={handleSubmit} className="flex flex-col">
+        <div className="">
           <div className="mb-4">
             <label htmlFor="name" className="">Name</label>
             <input
@@ -33,7 +33,7 @@ const  Form = () => {
               value={formData.name}
               onChange={handleChange}
               placeholder="Name"
-              className="rounded-2xl bg-darkt p-2"
+              className="w-full rounded-2xl bg-darkt p-2"
             />
           </div>
           <div className="mb-4">
@@ -45,7 +45,7 @@ const  Form = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Email"
-              className="rounded-2xl bg-darkt p-2"
+              className="w-full rounded-2xl bg-darkt p-2"
             />
           </div>
         </div>
@@ -61,7 +61,7 @@ const  Form = () => {
             className="w-full rounded-2xl bg-darkt p-2"
           ></textarea>
         </div>
-        <button type="submit" className="w-40 bg-aquab p-2 rounded-3xl hover:bg-darkt hover:border-solid hover:border hover:border-lightw">
+        <button type="submit" className="w-40 self-center md:self-start bg-aquab p-2 rounded-3xl hover:bg-darkt hover:border-solid hover:border hover:border-lightw">
           Send message
         </button>
       </form>

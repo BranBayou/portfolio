@@ -1,7 +1,8 @@
-import React, { useState }from 'react'
+/* eslint-disable jsx-a11y/label-has-associated-control */
+import React, { useState } from 'react';
 import mail from '../../Assets/mail.svg';
 
-const  Form = () => {
+const Form = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,12 +19,12 @@ const  Form = () => {
 
   // const handleSubmit = (e) => {
   //   e.preventDefault();
-  //   console.log(formData); 
+  //   console.log(formData);
   // };
 
   return (
     <div className="w-full md:w-1/2 relative">
-      <form  id="form" action="https://formspree.io/f/xyyawdea" method="POST" className="flex flex-col">
+      <form id="form" action="https://formspree.io/f/xyyawdea" method="POST" className="flex flex-col">
         <div className="">
           <div className="mb-4">
             <label htmlFor="name" className="">Name</label>
@@ -60,7 +61,7 @@ const  Form = () => {
             placeholder="Message"
             rows="4"
             className="w-full rounded-2xl bg-darkt p-2"
-          ></textarea>
+          />
         </div>
         <button type="submit" className="w-40 self-center md:self-start bg-aquab p-2 rounded-3xl hover:bg-darkt hover:border-solid hover:border hover:border-lightw">
           Send message

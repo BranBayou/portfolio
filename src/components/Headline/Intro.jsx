@@ -1,8 +1,8 @@
 import React from 'react';
+import { FiDownload } from 'react-icons/fi';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import ringArrow from '../../Assets/ringArrow.svg';
-import { FiDownload } from "react-icons/fi";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 
 function Intro() {
   return (
@@ -13,7 +13,8 @@ function Intro() {
       <div className="h-full w-9/12 mx-auto flex flex-col gap-10 md:gap-10 items-center md:items-start justify-center">
         <div className="">
           <h1 className="text-4xl font-bold">
-            Hi I&apos;m Bran,A Full-Stack{" "}
+            Hi I&apos;m Bran,A Full-Stack
+            {' '}
             <span className="text-aquab text-4xl font-bold">DEVELOPER.</span>
           </h1>
           <div>
@@ -64,7 +65,9 @@ function Intro() {
             className="flex items-center justify-center gap-3 w-56 bg-darkt p-2 rounded-3xl border hover:bg-aquab text-center"
             download="Bran_Baye_CV.pdf"
           >
-            Download my CV <FiDownload />
+            Download my CV
+            {' '}
+            <FiDownload />
           </a>
         </div>
       </div>

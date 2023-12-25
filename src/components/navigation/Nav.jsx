@@ -1,12 +1,13 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import { IoMenu, IoClose } from 'react-icons/io5';
 import { Link } from 'react-scroll';
 
 const NavLinks = ({ closeNavbar }) => (
   <>
-    <Link to="about" smooth={true} duration={500} className="hover:cursor-pointer hover:text-aquab hover:border-b hover:border-aquab hover:px-2 transition-all duration-300 ease-linear" onClick={closeNavbar}>About</Link>
-    <Link to="works" smooth={true} duration={500} className="hover:cursor-pointer hover:text-aquab hover:border-b hover:border-aquab hover:px-2 transition-all duration-300 ease-linear" onClick={closeNavbar}>Works</Link>
-    <Link to="contact" smooth={true} duration={500} className="hover:cursor-pointer hover:text-aquab hover:border-b hover:border-aquab hover:px-2 transition-all duration-300 ease-linear" onClick={closeNavbar}>Contact</Link>
+    <Link to="about" smooth duration={500} className="hover:cursor-pointer hover:text-aquab hover:border-b hover:border-aquab hover:px-2 transition-all duration-300 ease-linear" onClick={closeNavbar}>About</Link>
+    <Link to="works" smooth duration={500} className="hover:cursor-pointer hover:text-aquab hover:border-b hover:border-aquab hover:px-2 transition-all duration-300 ease-linear" onClick={closeNavbar}>Works</Link>
+    <Link to="contact" smooth duration={500} className="hover:cursor-pointer hover:text-aquab hover:border-b hover:border-aquab hover:px-2 transition-all duration-300 ease-linear" onClick={closeNavbar}>Contact</Link>
   </>
 );
 

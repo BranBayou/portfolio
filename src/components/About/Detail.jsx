@@ -3,7 +3,7 @@ import React from 'react';
 const Detail = () => {
   return (
     <div className="w-full md:w-1/2">
-        <h2 className="text-4xl font-bold">About <span className="text-aquab">Me</span></h2>
+        <h2 className="text-4xl font-bold my-3 py-6">About <span className="text-aquab">Me</span></h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur
           adipiscing elit.

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
-const Logo = () => {
-  return (
-    <Link to='home' smooth={true} duration={500} className="cursor-pointer">
+const Logo = () => (
+  <Link to="home" smooth duration={500} className="cursor-pointer">
     <div className="flex items-center gap-2">
       <p className="text-2xl text-amber-500">&#123;</p>
       <div className="flex flex-col items-center">
@@ -12,8 +11,7 @@ const Logo = () => {
       </div>
       <p className="text-2xl text-amber-500">&#125;</p>
     </div>
-    </Link>
-  );
-};
+  </Link>
+);
 
 export default Logo;

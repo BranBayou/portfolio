@@ -1,0 +1,27 @@
+.glow-container {
+  position: relative;
+}
+
+.glow-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: glowing 2s infinite;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 173, 181, 0.7);
+  }
+
+  50% {
+    box-shadow: 0 0 20px rgba(0, 173, 181, 0.7);
+  }
+
+  100% {
+    box-shadow: 0 0 5px rgba(0, 173, 181, 0.7);
+  }
+}

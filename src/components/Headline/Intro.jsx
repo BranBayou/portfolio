@@ -1,49 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import React from 'react';
 import ringArrow from '../../Assets/ringArrow.svg';
 import { FiDownload } from "react-icons/fi";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { useInView } from 'react-intersection-observer';
-
 
 function Intro() {
-  const [isVisible, setIsVisible] = useState(false);
-  const controls = useAnimation();
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.5,
-  });
-
-  useEffect(() => {
-    if (inView) {
-      setIsVisible(true);
-    }
-  }, [inView]);
-
-  useEffect(() => {
-    if (isVisible) {
-      controls.start({
-        opacity: 1,
-        y: 0,
-        transition: {
-          duration: 0.5,
-          ease: 'easeInOut',
-        },
-      });
-    }
-  }, [isVisible, controls]);
   return (
-    <motion.div
-      className="h-full w-full intro-container"
-      ref={ref}
-      initial={{ opacity: 0, y: 30 }}
-      animate={controls}
-      onAnimationComplete={() => setIsVisible(false)}
-    >
     <div className="h-full w-full ">
       <div className="">
-        <img className="absolute top-52" src={ringArrow} alt="arrow" />
+        <img className="absolute hidden md:block top-52" src={ringArrow} alt="arrow" />
       </div>
       <div className="h-full w-9/12 mx-auto flex flex-col gap-10 md:gap-10 items-center md:items-start justify-center">
         <div className="">
@@ -104,7 +69,6 @@ function Intro() {
         </div>
       </div>
     </div>
-    </motion.div>
   );
 }
 

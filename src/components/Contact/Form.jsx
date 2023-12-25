@@ -1,4 +1,5 @@
 import React, { useState }from 'react'
+import mail from '../../Assets/mail.svg';
 
 const  Form = () => {
   const [formData, setFormData] = useState({
@@ -15,14 +16,14 @@ const  Form = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData); 
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log(formData); 
+  // };
 
   return (
-    <div className="w-full md:w-1/2">
-      <form onSubmit={handleSubmit} className="flex flex-col">
+    <div className="w-full md:w-1/2 relative">
+      <form  id="form" action="https://formspree.io/f/xyyawdea" method="POST" className="flex flex-col">
         <div className="">
           <div className="mb-4">
             <label htmlFor="name" className="">Name</label>
@@ -65,6 +66,7 @@ const  Form = () => {
           Send message
         </button>
       </form>
+      <img className="absolute right-20" src={mail} alt="mailImg" />
     </div>
   );
 };

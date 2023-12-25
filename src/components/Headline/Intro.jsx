@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
 import { FiDownload } from 'react-icons/fi';
@@ -9,7 +10,7 @@ function Intro() {
   return (
     <div className="h-full w-full ">
       <div className="">
-        <img className="absolute hidden md:block top-52" src={ringArrow} alt="arrow" />
+        <img className="absolute hidden md:block top-16" src={ringArrow} alt="arrow" />
       </div>
       <div className="h-full w-9/12 mx-auto flex flex-col gap-10 md:gap-10 items-center md:items-start justify-center">
         <div className="">
@@ -20,9 +21,7 @@ function Intro() {
           </h1>
           <div>
             <p className="mt-9">
-              Passionate about creating visually appealing and user-friendly
-              websites, focusing on seamless user interfaces and engaging
-              experiences.
+              I am a dedicated Full-Stack Developer proficient in crafting innovative web solutions that revolve around JavaScript, React-Redux, and Ruby on Rails technologies. My expertise lies in conceptualizing, designing, and implementing robust applications, all aimed at driving seamless user experiences.
             </p>
             <div className="py-2 flex gap-6">
               <a

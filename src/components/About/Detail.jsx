@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 
 const Detail = () => (
@@ -7,12 +8,7 @@ const Detail = () => (
       <span className="text-aquab">Me</span>
     </h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
-      Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-      per inceptos himenaeos.
-      Curabitur tempus urna at turpis condimentum lobortis....
+      Graduating with a degree in IT equipped me with a comprehensive understanding of technologys core principles, a knowledge base I&apos;ve passionately leveraged and expanded upon at Microverse, an online school, where I delved into the world of full-stack development.
       {' '}
       <a href="/">Read more</a>
     </p>

@@ -20,7 +20,7 @@ const Showcase = () => {
   return (
     <div className="w-full grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 ib:grid-cols-3  gap-4">
       {Constant.map((data, index) => (
-        <div key={index} className={`bg-darkt border border-gray-500 hover:cursor-pointer hover:border-2 hover:border-aquab p-3 rounded-3xl`}>
+        <div key={index} className={`bg-darkt border border-gray-500 hover:cursor-pointer hover:border-2 hover:border-gray-500 p-3 rounded-3xl`}>
           <div className="mb-2">
             <img src={data.img[0]} className="w-full rounded-3xl" alt="img" />
           </div>

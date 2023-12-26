@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 
 const Detail = () => (
@@ -7,14 +8,8 @@ const Detail = () => (
       <span className="text-aquab">Me</span>
     </h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
-      Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-      per inceptos himenaeos.
-      Curabitur tempus urna at turpis condimentum lobortis....
+      My expertise lies in conceptualizing, designing, and implementing robust applications, all aimed at driving seamless user experiences. I thrive on transforming ideas into functional, user-centric applications. My expertise ranges from architecting robust back-end systems to crafting intuitive front-end interfaces. Additionally, I bring proven experience in remote pair-programming, mentoring, and fostering effective teamwork.
       {' '}
-      <a href="/">Read more</a>
     </p>
   </div>
 );

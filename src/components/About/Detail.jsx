@@ -8,9 +8,8 @@ const Detail = () => (
       <span className="text-aquab">Me</span>
     </h2>
     <p>
-      Graduating with a degree in IT equipped me with a comprehensive understanding of technologys core principles, a knowledge base I&apos;ve passionately leveraged and expanded upon at Microverse, an online school, where I delved into the world of full-stack development.
+      My expertise lies in conceptualizing, designing, and implementing robust applications, all aimed at driving seamless user experiences. I thrive on transforming ideas into functional, user-centric applications. My expertise ranges from architecting robust back-end systems to crafting intuitive front-end interfaces. Additionally, I bring proven experience in remote pair-programming, mentoring, and fostering effective teamwork.
       {' '}
-      <a href="/">Read more</a>
     </p>
   </div>
 );

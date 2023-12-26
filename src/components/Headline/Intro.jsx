@@ -21,7 +21,7 @@ function Intro() {
           </h1>
           <div>
             <p className="mt-9">
-              I am a dedicated Full-Stack Developer proficient in crafting innovative web solutions that revolve around JavaScript, React-Redux, and Ruby on Rails technologies. My expertise lies in conceptualizing, designing, and implementing robust applications, all aimed at driving seamless user experiences.
+              I am a dedicated Full-Stack Developer proficient in crafting innovative web solutions that revolve around JavaScript, React-Redux, and Ruby on Rails technologies. I have earned a degree in Information Technology, a qualification that has significantly enriched my understanding and capabilities as a Full-Stack Developer.
             </p>
             <div className="py-2 flex gap-6">
               <a

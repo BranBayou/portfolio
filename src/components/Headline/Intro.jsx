@@ -15,7 +15,7 @@ function Intro() {
       <div className="h-full w-9/12 mx-auto flex flex-col gap-10 md:gap-10 items-center md:items-start justify-center">
         <div className="">
           <h1 className="text-4xl font-bold">
-            👋 Hi I&apos;m Bran,A Full-Stack
+            👋 Hi I&apos;m Bran, a Full-Stack
             {' '}
             <span className="text-aquab text-4xl font-bold">Developer.</span>
           </h1>

@@ -36,6 +36,7 @@ const Form = () => {
               onChange={handleChange}
               placeholder="Name"
               className="w-full rounded-2xl bg-darkt p-2"
+              required
             />
           </div>
           <div className="mb-4">
@@ -48,6 +49,7 @@ const Form = () => {
               onChange={handleChange}
               placeholder="Email"
               className="w-full rounded-2xl bg-darkt p-2"
+              required
             />
           </div>
         </div>

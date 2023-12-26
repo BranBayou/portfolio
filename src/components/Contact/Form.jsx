@@ -63,6 +63,7 @@ const Form = () => {
             placeholder="Message"
             rows="4"
             className="w-full rounded-2xl bg-darkt p-2"
+            required
           />
         </div>
         <button type="submit" className="w-40 self-center md:self-start bg-aquab p-2 rounded-3xl hover:bg-darkt hover:border-solid hover:border hover:border-lightw">

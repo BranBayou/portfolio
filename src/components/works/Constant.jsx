@@ -4,7 +4,6 @@ import mealC3 from '../../Assets/constants/mealC3.jpeg';
 import mealC4 from '../../Assets/constants/mealC4.jpeg';
 import bookS1 from '../../Assets/constants/bookStoreD.png';
 import randC1 from '../../Assets/constants/randC3.png';
-import randC2 from '../../Assets/constants/randC2.png';
 import randC4 from '../../Assets/constants/randC4.png';
 import blog1 from '../../Assets/constants/blogD.png';
 import blog2 from '../../Assets/constants/blogM.png';
@@ -37,7 +36,7 @@ const Constant = [
     title: 'Random cities',
     shortDes: 'React app',
     desc: 'Random Cities React App is an interactive and dynamic application built using React.js that allows users to explore various cities information worldwide utilizing API.',
-    img: [randC1, randC2, randC4],
+    img: [randC1, randC4],
     stack: ['Css3', 'React'],
     liveDemo: 'https://world-cities-random.onrender.com/',
     gitHub: 'https://github.com/BranBayou/random-cities',

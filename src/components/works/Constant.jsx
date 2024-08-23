@@ -6,7 +6,6 @@ import bookS1 from '../../Assets/constants/bookStoreD.png';
 import randC1 from '../../Assets/constants/randC3.png';
 import randC4 from '../../Assets/constants/randC4.png';
 import blog1 from '../../Assets/constants/blogD.png';
-import blog2 from '../../Assets/constants/blogM.png';
 import bslp1 from '../../Assets/constants/bslp1.png';
 import bslp2 from '../../Assets/constants/bslp2.png';
 import bslp3 from '../../Assets/constants/bslp3.png';
@@ -45,7 +44,7 @@ const Constant = [
     title: 'Personal blog',
     shortDes: 'Front end app',
     desc: 'This is a personal blog website that you can use and gives a platform where you can share thoughts, opinions, and stories about yourself.',
-    img: [blog1, blog2],
+    img: [blog1],
     stack: ['Html5', 'Css3', 'JavaScript'],
     liveDemo: 'https://branbayou.github.io/capstonePro1-personal-blog/',
     gitHub: 'https://github.com/BranBayou/capstonePro1-personal-blog',

@@ -3,7 +3,6 @@ import mealC2 from '../../Assets/constants/mealC2.jpeg';
 import mealC3 from '../../Assets/constants/mealC3.jpeg';
 import mealC4 from '../../Assets/constants/mealC4.jpeg';
 import bookS1 from '../../Assets/constants/bookStoreD.png';
-import bookS2 from '../../Assets/constants/bookStoreM.png';
 import randC1 from '../../Assets/constants/randC3.png';
 import randC2 from '../../Assets/constants/randC2.png';
 import randC4 from '../../Assets/constants/randC4.png';
@@ -29,7 +28,7 @@ const Constant = [
     title: 'Bookstore app',
     shortDes: 'API app',
     desc: 'Bookstore app is React-based Web App leverages an API to deliver a dynamic and responsive online bookstore experience. Users can add, delete, see chapters, and easily store a wide variety of books through an intuitive web interface.',
-    img: [bookS1, bookS2],
+    img: [bookS1],
     stack: ['React', 'Css3', 'public Api'],
     liveDemo: 'https://brans-bookstore-app.onrender.com/',
     gitHub: 'https://github.com/BranBayou/react-bookstore',

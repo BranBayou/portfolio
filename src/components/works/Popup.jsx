@@ -38,21 +38,19 @@ const Popup = ({ data, closePopup }) => {
             className="flex flex-col sm:flex-row gap-8 h-full"
           >
             <div className="w-full sm:w-1/2">
-            <Carousel>
+              <Carousel>
                 <div>
-                    <img src={data.img[0]} alt='first img' />
-                    <p className="legend">Legend 1</p>
+                  <img src={data.img[0]} alt="first img" />
                 </div>
                 <div>
-                    <img src={data.img[1]} alt='second img' />
-                    <p className="legend">Legend 2</p>
+                  <img src={data.img[1]} alt="second img" />
+                  <p className="legend">Legend 2</p>
                 </div>
                 <div>
-                    <img src={data.img[2]} alt='third img' />
-                    <p className="legend">Legend 3</p>
+                  <img src={data.img[2]} alt="third img" />
+                  <p className="legend">Legend 3</p>
                 </div>
-            </Carousel>
-              
+              </Carousel>
             </div>
             <div className="w-full sm:w-1/2 flex flex-col">
               <h1 className="text-2xl text-darkt">{data.title}</h1>

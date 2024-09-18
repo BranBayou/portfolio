@@ -44,7 +44,6 @@ const Popup = ({ data, closePopup }) => {
                 </div>
                 <div>
                   <img src={data.img[1]} alt="second img" />
-                  <p className="legend">Legend 2</p>
                 </div>
                 <div>
                   <img src={data.img[2]} alt="third img" />

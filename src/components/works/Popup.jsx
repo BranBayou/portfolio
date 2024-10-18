@@ -47,7 +47,6 @@ const Popup = ({ data, closePopup }) => {
                 </div>
                 <div>
                   <img src={data.img[2]} alt="third img" />
-                  <p className="legend">Legend 3</p>
                 </div>
               </Carousel>
             </div>

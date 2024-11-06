@@ -51,6 +51,9 @@ const Popup = ({ data, closePopup }) => {
                 <div>
                   <img src={data.img[2]} alt="third img" />
                 </div>
+                <div>
+                  <img src={data.img[2]} alt="third img" />
+                </div>
               </Carousel>
             </div>
             <div className="w-full sm:w-1/2 flex flex-col">

@@ -5,6 +5,8 @@ import React, { useState, useEffect } from 'react';
 import { FaGithub } from 'react-icons/fa';
 import { IoClose } from 'react-icons/io5';
 import { BsRocketFill } from 'react-icons/bs';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import { Carousel } from 'react-responsive-carousel';
 
 const Popup = ({ data, closePopup }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,11 +38,21 @@ const Popup = ({ data, closePopup }) => {
             className="flex flex-col sm:flex-row gap-8 h-full"
           >
             <div className="w-full sm:w-1/2">
-              <img
-                src={data.img[0]}
-                className="w-full rounded-lg h-64 sm:h-full object-cover"
-                alt="img"
-              />
+            <Carousel>
+                <div>
+                    <img src={data.img[0]} alt='first img' />
+                    <p className="legend">Legend 1</p>
+                </div>
+                <div>
+                    <img src={data.img[1]} alt='second img' />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                    <img src={data.img[2]} alt='third img' />
+                    <p className="legend">Legend 3</p>
+                </div>
+            </Carousel>
+              
             </div>
             <div className="w-full sm:w-1/2 flex flex-col">
               <h1 className="text-2xl text-darkt">{data.title}</h1>

@@ -59,7 +59,7 @@ const Constant = [
     img: [bslp1, bslp2, bslp3, bslp4, bslp5],
     stack: ['React', 'Tailwind', 'Ruby on Rails'],
     liveDemo: 'https://branbayou.github.io/bootstrap-landing-page/',
-    gitHub: 'https://github.com/BranBayou/meal_connect-frontend',
+    gitHub: 'https://github.com/BranBayou/bootstrap-landing-page',
   },
 ];
 

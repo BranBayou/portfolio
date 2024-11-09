@@ -57,7 +57,7 @@ const Constant = [
     shortDes: 'Front end development',
     desc: 'Built with Bootstrap 5, this sleek and responsive design offers a clean, modern layout optimized for all devices. Perfect for showcasing your business, product, or portfolio with style and ease.',
     img: [bslp1, bslp2, bslp3, bslp4, bslp5],
-    stack: ['React', 'Tailwind', 'Ruby on Rails'],
+    stack: ['React', 'Bootstrap 5', 'Figma'],
     liveDemo: 'https://branbayou.github.io/bootstrap-landing-page/',
     gitHub: 'https://github.com/BranBayou/bootstrap-landing-page',
   },

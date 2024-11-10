@@ -58,7 +58,7 @@ const Constant = [
     desc: 'Built with Bootstrap 5, this sleek and responsive design offers a clean, modern layout optimized for all devices. Perfect for showcasing your business, product, or portfolio with style and ease.',
     img: [bslp1, bslp2, bslp3, bslp4, bslp5],
     stack: ['React', 'Tailwind', 'Ruby on Rails'],
-    liveDemo: 'https://deployment--eloquent-malabi-441830.netlify.app/login',
+    liveDemo: 'https://branbayou.github.io/bootstrap-landing-page/',
     gitHub: 'https://github.com/BranBayou/meal_connect-frontend',
   },
 ];

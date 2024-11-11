@@ -9,6 +9,11 @@ import randC2 from '../../Assets/constants/randC2.png';
 import randC4 from '../../Assets/constants/randC4.png';
 import blog1 from '../../Assets/constants/blogD.png';
 import blog2 from '../../Assets/constants/blogM.png';
+import bslp1 from '../../Assets/constants/bslp1.png';
+import bslp2 from '../../Assets/constants/bslp2.png';
+import bslp3 from '../../Assets/constants/bslp3.png';
+import bslp4 from '../../Assets/constants/bslp4.png';
+import bslp5 from '../../Assets/constants/bslp5.png';
 
 const Constant = [
   {

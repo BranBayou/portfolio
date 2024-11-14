@@ -50,7 +50,7 @@ const Constant = [
   {
     title: 'Bootstrap Landing Page',
     shortDes: 'Front end development',
-    desc: 'MealConnect is a vibrant web application designed for those who appreciate the art of cooking and the pleasure of savoring exquisite meals. Dive into a world of flavors, discover new recipes, and make customized reservations based on your taste buds.',
+    desc: 'Built with Bootstrap 5, this sleek and responsive design offers a clean, modern layout optimized for all devices. Perfect for showcasing your business, product, or portfolio with style and ease.',
     img: [mealC1, mealC2, mealC3, mealC4],
     stack: ['React', 'Tailwind', 'Ruby on Rails'],
     liveDemo: 'https://deployment--eloquent-malabi-441830.netlify.app/login',

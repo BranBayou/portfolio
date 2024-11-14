@@ -47,6 +47,15 @@ const Constant = [
     liveDemo: 'https://branbayou.github.io/capstonePro1-personal-blog/',
     gitHub: 'https://github.com/BranBayou/capstonePro1-personal-blog',
   },
+  {
+    title: 'Bootstrap Landing Page',
+    shortDes: 'Front end development',
+    desc: 'MealConnect is a vibrant web application designed for those who appreciate the art of cooking and the pleasure of savoring exquisite meals. Dive into a world of flavors, discover new recipes, and make customized reservations based on your taste buds.',
+    img: [mealC1, mealC2, mealC3, mealC4],
+    stack: ['React', 'Tailwind', 'Ruby on Rails'],
+    liveDemo: 'https://deployment--eloquent-malabi-441830.netlify.app/login',
+    gitHub: 'https://github.com/BranBayou/meal_connect-frontend',
+  },
 ];
 
 export default Constant;

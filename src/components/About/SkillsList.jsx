@@ -2,6 +2,7 @@ import React from 'react';
 import {
   FaHtml5,
   FaReact,
+  FaVuejs,
   FaBootstrap,
   FaSass,
   FaLinux,
@@ -50,6 +51,12 @@ const SkillsList = () => (
     <details className="flex flex-col items-center" open>
       <summary className="text-lg font-bold">Frameworks</summary>
       <ul className="py-2 flex items-center justify-center gap-3 flex-wrap">
+        <li className="bg-darkt">
+          <FaVuejs
+            size={40}
+            className="text-cyan-500 p-1 hover:cursor-pointer transition-transform transform hover:scale-150"
+          />
+        </li>
         <li className="bg-darkt">
           <FaReact
             size={40}

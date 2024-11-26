@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 import { FaGithub } from 'react-icons/fa';
 import { IoClose } from 'react-icons/io5';
 import { BsRocketFill } from 'react-icons/bs';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 
 const Popup = ({ data, closePopup }) => {

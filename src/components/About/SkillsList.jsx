@@ -9,9 +9,10 @@ import {
   FaGitAlt,
   FaGithub,
   FaJava,
+  FaBitbucket,
 } from 'react-icons/fa';
 import { IoLogoCss3, IoLogoJavascript } from 'react-icons/io';
-import { SiTailwindcss, SiRubyonrails } from 'react-icons/si';
+import { SiTailwindcss, SiRubyonrails, SiDotnet } from 'react-icons/si';
 import { DiRuby } from 'react-icons/di';
 import { BiLogoPostgresql } from 'react-icons/bi';
 import { PiFileSql } from 'react-icons/pi';
@@ -87,6 +88,12 @@ const SkillsList = () => (
             className="text-pink-500 p-1 hover:cursor-pointer transition-transform transform hover:scale-150"
           />
         </li>
+        <li className="bg-darkt">
+          <SiDotnet
+            size={40}
+            className="text-pink-500 p-1 hover:cursor-pointer transition-transform transform hover:scale-150"
+          />
+        </li>
       </ul>
     </details>
     <details className="flex flex-col items-center" open>
@@ -100,6 +107,9 @@ const SkillsList = () => (
         </li>
         <li className="bg-darkt">
           <FaLinux size={40} className="text-yellow-500 p-1 hover:cursor-pointer transition-transform transform hover:scale-150" />
+        </li>
+        <li className="bg-darkt">
+          <FaBitbucket size={40} className="text-yellow-500 p-1 hover:cursor-pointer transition-transform transform hover:scale-150" />
         </li>
       </ul>
     </details>

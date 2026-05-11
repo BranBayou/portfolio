@@ -59,10 +59,10 @@ const Navbar: React.FC = () => {
           {/* Socials & Mobile Toggle */}
           <div className="flex items-center gap-4">
             <div className="hidden md:flex items-center gap-3 pr-4 border-r border-dev-border">
-               <a href="#" className="text-dev-muted hover:text-white transition-colors">
+               <a href="https://github.com/BranBayou" className="text-dev-muted hover:text-white transition-colors">
                  <Github className="w-5 h-5" />
                </a>
-               <a href="#" className="text-dev-muted hover:text-white transition-colors">
+               <a href="https://www.linkedin.com/in/bran-baye/" className="text-dev-muted hover:text-white transition-colors">
                  <Linkedin className="w-5 h-5" />
                </a>
             </div>

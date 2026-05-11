@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
                    </div>
                    <div>
                      <div className="text-sm text-dev-muted">Email</div>
-                     <div className="text-white font-medium">hello@devport.com</div>
+                     <div className="text-white font-medium">berhan.baye@gmail.com</div>
                    </div>
                  </div>
                </ScrollReveal>

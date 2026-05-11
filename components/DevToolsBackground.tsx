@@ -9,7 +9,7 @@ const mockDomLines = [
   { id: 4, indent: 2, content: '<div id="root">' },
   { id: 5, indent: 3, content: '<header class="fixed w-full z-50">' },
   { id: 6, indent: 4, content: '<nav class="flex justify-between">' },
-  { id: 7, indent: 5, content: '<div class="logo">DevPort</div>', flash: true },
+  { id: 7, indent: 5, content: '<div class="logo">Berhanu</div>', flash: true },
   { id: 8, indent: 4, content: '</nav>' },
   { id: 9, indent: 3, content: '</header>' },
   { id: 10, indent: 3, content: '<main class="hero-section relative">' },

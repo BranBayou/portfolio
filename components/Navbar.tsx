@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
             </div>
             <span className="font-mono font-bold text-lg text-white tracking-tight">
               <span className="text-dev-blue">&lt;</span>
-              DevPort
+              Bran web apps
               <span className="text-dev-blue">/&gt;</span>
             </span>
           </div>

@@ -45,9 +45,14 @@ const technologies: TechItem[] = [
   { name: 'AWS', logoUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg', category: 'DevOps' },
   { name: 'Azure', logoUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg', category: 'DevOps' },
   { name: 'GCP', logoUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg', category: 'DevOps' },
+
+  // AI Agents
+  { name: 'Claude Code', logoUrl: 'https://cdn.simpleicons.org/anthropic', category: 'AI' },
+  { name: 'Codex', logoUrl: 'https://cdn.simpleicons.org/openai', category: 'AI' },
+  { name: 'Cursor', logoUrl: 'https://cdn.simpleicons.org/cursor', category: 'AI' },
 ];
 
-type CategoryType = 'All' | 'Frontend' | 'Backend' | 'Database' | 'DevOps';
+type CategoryType = 'All' | 'Frontend' | 'Backend' | 'Database' | 'DevOps' | 'AI';
 
 const TechStack: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<CategoryType>('All');
@@ -58,6 +63,7 @@ const TechStack: React.FC = () => {
     { id: 'Backend', label: 'Backend', icon: Server },
     { id: 'Database', label: 'Database', icon: Database },
     { id: 'DevOps', label: 'DevOps', icon: Cloud },
+    { id: 'AI', label: 'AI Agents', icon: Cpu },
   ];
 
   const filteredTechnologies = activeCategory === 'All' 
@@ -118,7 +124,7 @@ const TechStack: React.FC = () => {
                     src={tech.logoUrl} 
                     alt={tech.name}
                     className={`w-full h-full object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 ${
-                        ['GitHub', 'Next.js', 'Express', 'SQL Server', 'Rails'].includes(tech.name) ? 'invert group-hover:invert-0' : ''
+                        ['GitHub', 'Next.js', 'Express', 'SQL Server', 'Rails', 'Codex', 'Cursor'].includes(tech.name) ? 'invert group-hover:invert-0' : ''
                     }`}
                   />
                 </div>

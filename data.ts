@@ -7,6 +7,9 @@ export const profile = {
   email: 'berhan.baye@gmail.com',
   location: 'Addis Ababa, Ethiopia',
   currentlyWorkingOn: 'Portfolio',
+  // Formspree endpoint for the contact form, e.g. 'https://formspree.io/f/abcdwxyz'.
+  // Leave empty to have the form open the visitor's email app instead.
+  contactFormEndpoint: '',
 };
 
 export const socials: SocialLink[] = [
@@ -149,35 +152,63 @@ export const skills: SkillGroup[] = [
   { title: 'AI Agents', items: ['Claude Code', 'Codex', 'Cursor'] },
 ];
 
+// From Upwork contracts (most recent first). Clients that are individuals are not named.
 export const experience: ExperienceItem[] = [
   {
     id: 1,
-    role: 'Senior Frontend Engineer',
-    company: 'TechCorp Solutions',
-    period: '2022 - Present',
-    description: 'Leading the frontend migration to Next.js, improving core web vitals by 40%. Mentoring 3 junior developers and establishing a component library system.'
+    role: 'Frontend Developer',
+    company: 'Tidyl Group LLC · Upwork',
+    period: 'Dec 2024 - Present',
+    description: 'Converting Figma designs into pixel-accurate, responsive HTML and CSS pages.'
   },
   {
     id: 2,
-    role: 'Frontend Developer',
-    company: 'Creative Agency',
-    period: '2020 - 2022',
-    description: 'Developed award-winning interactive marketing sites for Fortune 500 clients using React, GSAP, and WebGL.'
+    role: 'Front End Developer',
+    company: 'Upwork client',
+    period: 'Jan 2024 - Dec 2025',
+    description: 'Long-term contract building and maintaining responsive front-end interfaces with Bootstrap, JavaScript, and Vue.'
   },
   {
     id: 3,
-    role: 'Web Developer',
-    company: 'StartUp Inc',
-    period: '2018 - 2020',
-    description: 'Full stack development using MERN stack. Implemented real-time chat features and handled AWS deployment pipelines.'
+    role: 'Vue.js Developer, POS Application',
+    company: 'Upwork client',
+    period: 'Oct 2024 - Dec 2024',
+    description: 'Built a point-of-sale application in Vue covering the product catalog, cart, payments, discounts, taxes, and returns.'
+  },
+  {
+    id: 4,
+    role: 'Vue.js Developer',
+    company: 'Malefiya · Upwork',
+    period: 'Nov 2024',
+    description: 'Delivered features for a Vue.js project with Pinia for state management.'
+  },
+  {
+    id: 5,
+    role: 'Chief Computer Laboratory Assistant',
+    company: 'Debre Tabor University',
+    period: 'Before freelancing',
+    description: 'Ran the university computer labs, supporting students and staff with hardware, software, and networking.'
   }
 ];
 
+// From the Accredible credential wallet, most recent first.
+export const credentialWalletUrl = 'https://www.credential.net/profile/berhanubayetebebu240780/wallet';
+
+export const googleDeveloperProfileUrl = 'https://developers.google.com/profile/u/109491434437748843113';
+
 export const certifications: Certification[] = [
-  { id: 1, name: 'AWS Certified Cloud Practitioner', issuer: 'Amazon Web Services', date: 'Dec 2023', verifyUrl: '#' },
-  { id: 2, name: 'Meta Frontend Developer', issuer: 'Meta', date: 'Aug 2023', verifyUrl: '#' },
-  { id: 3, name: 'Google UX Design Professional', issuer: 'Google', date: 'Mar 2022', verifyUrl: '#' },
-  { id: 4, name: 'Certified ScrumMaster® (CSM)', issuer: 'Scrum Alliance', date: 'Jan 2021', verifyUrl: '#' },
+  // Google Developer Program badges (no per-badge pages, so they link to the profile).
+  { id: 7, name: 'DOM Detective', issuer: 'Google for Developers', date: 'May 2026', verifyUrl: googleDeveloperProfileUrl, image: 'badges/dom-detective.svg', kind: 'badge' },
+  { id: 8, name: 'Code Whisperer', issuer: 'Google for Developers', date: 'Nov 2025', verifyUrl: googleDeveloperProfileUrl, image: 'badges/code-whisperer.svg', kind: 'badge' },
+  { id: 9, name: 'Chrome DevTools User', issuer: 'Google for Developers', date: 'Nov 2025', verifyUrl: googleDeveloperProfileUrl, image: 'badges/chrome-devtools-user.svg', kind: 'badge' },
+  { id: 10, name: 'Google Developer Program Member', issuer: 'Google for Developers', date: 'Jun 2023', verifyUrl: googleDeveloperProfileUrl, image: 'badges/google-developer-program.svg', kind: 'badge' },
+  // Microverse certificates.
+  { id: 1, name: 'Software Development Program', issuer: 'Microverse', date: 'Dec 2023', verifyUrl: 'https://www.credential.net/ab715eb7-9e0a-4ab1-812e-267efc90473c', image: 'badges/microverse-software-development-program.png', kind: 'badge' },
+  { id: 2, name: 'Ruby on Rails Module', issuer: 'Microverse', date: 'Nov 2023', verifyUrl: 'https://www.credential.net/806d88c2-d2b6-405d-a47f-6e7f2a15a551', image: 'badges/microverse-ruby-on-rails.png', kind: 'badge' },
+  { id: 3, name: 'Ruby/Databases Module', issuer: 'Microverse', date: 'Jul 2023', verifyUrl: 'https://www.credential.net/bf3fe68d-c7e6-4096-be08-23ea507a5c40', image: 'badges/microverse-ruby-databases.png', kind: 'badge' },
+  { id: 4, name: 'React & Redux Module', issuer: 'Microverse', date: 'Jun 2023', verifyUrl: 'https://www.credential.net/5db44ded-9a64-42ce-b2e8-d558dab5e6f6', image: 'badges/microverse-react-redux.png', kind: 'badge' },
+  { id: 5, name: 'JavaScript Module', issuer: 'Microverse', date: 'May 2023', verifyUrl: 'https://www.credential.net/6ef2491f-2ffb-4365-9048-40239250cb96', image: 'badges/microverse-javascript.png', kind: 'badge' },
+  { id: 6, name: 'HTML/CSS Module', issuer: 'Microverse', date: 'Mar 2023', verifyUrl: 'https://www.credential.net/5f21edba-f8e4-4877-ab91-2f401716310c', image: 'badges/microverse-html-css.png', kind: 'badge' },
 ];
 
 // Words wrapped in *asterisks* are highlighted in white.

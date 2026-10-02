@@ -22,6 +22,9 @@ export interface Certification {
   issuer: string;
   date: string;
   verifyUrl: string;
+  image: string;
+  // Badges are square icons shown centered; certificates fill the image area.
+  kind?: 'certificate' | 'badge';
 }
 
 export interface SkillGroup {

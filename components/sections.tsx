@@ -5,10 +5,7 @@ import { Dots, OutlineSquare, SkillBlock, SocialIcon, asset } from './ui';
 export const Hero: React.FC = () => (
   <section className="grid md:grid-cols-2 gap-10 md:gap-4 items-center pt-[62px]">
     <div className="flex flex-col gap-8 max-w-[537px]">
-      <h1 className="text-[32px] font-semibold text-white leading-normal">
-        {profile.name} is a <span className="text-primary">senior full stack engineer</span> and{' '}
-        <span className="text-primary">code whisperer</span>
-      </h1>
+      <h1 className="text-[32px] font-semibold text-white leading-normal"> I'm {profile.name}, a <span className="text-primary">full stack engineer</span>, <span className="text-primary">web developer, </span>and <span className="text-primary">code whisperer</span></h1>
       <p className="text-muted leading-[25px] max-w-[463px]">
         He crafts pixel-perfect, accessible web experiences where clean code meets smooth animations
       </p>

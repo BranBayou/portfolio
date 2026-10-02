@@ -2,6 +2,7 @@ import React from 'react';
 import { profile, socials } from '../data';
 import { Container, PageTitle, SectionHeading, SocialIcon } from '../components/ui';
 import { ContactBlurb, MessageMeBox, PageEdgeDecor } from '../components/sections';
+import ContactForm from '../components/ContactForm';
 
 const ContactsPage: React.FC = () => (
   <>
@@ -20,7 +21,12 @@ const ContactsPage: React.FC = () => (
         </div>
       </section>
 
-      <section className="pt-[46px]">
+      <section className="pt-[80px]">
+        <SectionHeading name="send-a-message" />
+        <ContactForm />
+      </section>
+
+      <section className="pt-[80px]">
         <SectionHeading name="all-media" />
         <div className="-mt-[24px] flex flex-wrap gap-x-6 gap-y-2">
           {socials.map((s) => (

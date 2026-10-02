@@ -1,6 +1,6 @@
 import React from 'react';
-import { certifications, experience, funFacts, skills } from '../data';
-import { Container, Dots, Highlighted, PageTitle, SectionHeading, SkillBlock, asset } from '../components/ui';
+import { certifications, credentialWalletUrl, experience, funFacts, skills } from '../data';
+import { Button, Container, Dots, Highlighted, PageTitle, SectionHeading, SkillBlock, asset } from '../components/ui';
 import { AboutImage, PageEdgeDecor } from '../components/sections';
 import ScrollReveal from '../components/ScrollReveal';
 
@@ -63,22 +63,56 @@ const AboutPage: React.FC = () => (
 
       <ScrollReveal>
         <section className="pt-[113px]">
-          <SectionHeading name="certifications" />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <SectionHeading name="certifications">
+            <a
+              href={credentialWalletUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-white hover:text-primary transition-colors whitespace-nowrap"
+            >
+              {'View all ~~>'}
+            </a>
+          </SectionHeading>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {certifications.map((cert) => (
-              <a
-                key={cert.id}
-                href={cert.verifyUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="border border-muted hover:border-primary transition-colors"
-              >
+              <article key={cert.id} className="border border-muted flex flex-col">
+                <a
+                  href={cert.verifyUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block aspect-[600/464] border-b border-muted overflow-hidden"
+                >
+                  {cert.kind === 'badge' ? (
+                    <span className="flex h-full items-center justify-center">
+                      <img
+                        src={asset(cert.image)}
+                        alt={`${cert.name} badge from ${cert.issuer}`}
+                        width={170}
+                        height={170}
+                        loading="lazy"
+                        className="h-[70%] w-auto hover:scale-105 transition-transform duration-300"
+                      />
+                    </span>
+                  ) : (
+                    <img
+                      src={asset(cert.image)}
+                      alt={`${cert.name} certificate from ${cert.issuer}`}
+                      width={600}
+                      height={464}
+                      loading="lazy"
+                      className="w-full h-full object-cover block hover:scale-[1.03] transition-transform duration-300"
+                    />
+                  )}
+                </a>
                 <h3 className="p-2 font-semibold text-white border-b border-muted">{cert.name}</h3>
-                <div className="p-2 flex flex-col gap-2 text-muted">
+                <div className="p-2 flex flex-col gap-2 text-muted flex-grow">
                   <span>{cert.issuer}</span>
                   <span>{cert.date}</span>
                 </div>
-              </a>
+                <div className="p-2 pt-0">
+                  <Button href={cert.verifyUrl} external>{'Check link <~>'}</Button>
+                </div>
+              </article>
             ))}
           </div>
         </section>

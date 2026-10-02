@@ -1,29 +1,39 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, Heart } from 'lucide-react';
+import { profile, socials } from '../data';
+import { Container, SocialIcon, asset } from './ui';
 
-const Footer: React.FC = () => {
-  return (
-    <footer className="bg-dev-bg border-t border-dev-border py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-        
-        <div className="text-center md:text-left">
-          <div className="font-bold text-white text-xl mb-1">Berhanu</div>
-          <p className="text-dev-muted text-sm">Built with React, Tailwind & Three.js</p>
+const Footer: React.FC = () => (
+  <footer className="mt-[145px] border-t border-muted pt-8 pb-8">
+    <Container className="flex flex-col gap-12">
+      <div className="flex flex-col sm:flex-row items-start justify-between gap-8">
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            <span className="flex items-center gap-[9px] font-medium text-white">
+              <img src={asset('logo.svg')} alt="" width={16} height={16} />
+              {profile.brand}
+            </span>
+            <a href={`mailto:${profile.email}`} className="text-muted hover:text-white transition-colors">
+              {profile.email}
+            </a>
+          </div>
+          <p className="text-white">{profile.role}</p>
         </div>
-
-        <div className="flex items-center gap-6">
-           <a href="#" className="text-dev-muted hover:text-white transition-colors"><Github className="w-5 h-5" /></a>
-           <a href="#" className="text-dev-muted hover:text-white transition-colors"><Linkedin className="w-5 h-5" /></a>
-           <a href="#" className="text-dev-muted hover:text-white transition-colors"><Twitter className="w-5 h-5" /></a>
+        <div className="flex flex-col gap-3">
+          <p className="text-2xl font-medium text-white">Media</p>
+          <div className="flex gap-2">
+            {socials.map((s) => (
+              <a key={s.name} href={s.href} target="_blank" rel="noreferrer" aria-label={s.name}>
+                <SocialIcon icon={s.icon} />
+              </a>
+            ))}
+          </div>
         </div>
-        
-        <div className="text-dev-muted text-sm flex items-center gap-1">
-          © {new Date().getFullYear()} Made with <Heart className="w-3 h-3 text-dev-red fill-current" /> by Berhanu
-        </div>
-
       </div>
-    </footer>
-  );
-};
+      <p className="text-muted text-center">
+        © Copyright {new Date().getFullYear()}. Made by {profile.name}
+      </p>
+    </Container>
+  </footer>
+);
 
 export default Footer;

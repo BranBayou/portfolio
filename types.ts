@@ -1,6 +1,3 @@
-
-import { LucideIcon } from 'lucide-react';
-
 export interface Project {
   id: number;
   title: string;
@@ -8,7 +5,7 @@ export interface Project {
   tags: string[];
   images: string[];
   repoUrl: string;
-  liveUrl: string;
+  liveUrl?: string;
 }
 
 export interface ExperienceItem {
@@ -19,25 +16,24 @@ export interface ExperienceItem {
   description: string;
 }
 
-export interface Testimonial {
-  id: number;
-  name: string;
-  role: string;
-  content: string;
-  avatarUrl: string;
-}
-
-export interface TechItem {
-  name: string;
-  logoUrl: string;
-  category: 'Frontend' | 'Backend' | 'Database' | 'DevOps';
-}
-
 export interface Certification {
   id: number;
   name: string;
   issuer: string;
   date: string;
-  imageUrl: string;
   verifyUrl: string;
 }
+
+export interface SkillGroup {
+  title: string;
+  items: string[];
+}
+
+export interface SocialLink {
+  name: string;
+  handle: string;
+  href: string;
+  icon: 'github' | 'linkedin';
+}
+
+export type Route = 'home' | 'works' | 'about-me' | 'contacts';

@@ -28,9 +28,11 @@ export const Hero: React.FC = () => (
       />
       <div className="relative ml-3 aspect-[457/386] overflow-hidden">
         <img
-          src={asset('hero.png')}
+          src={asset('profile.webp')}
           alt={`Portrait of ${profile.name}`}
-          className="absolute max-w-none h-[210.52%] w-[142.25%] left-[-28.5%] top-[-19.61%]"
+          width={1239}
+          height={1270}
+          className="absolute inset-0 w-full h-full object-cover object-top"
         />
       </div>
       <Dots className="absolute right-4 top-[246px] max-sm:hidden" />
@@ -79,7 +81,14 @@ export const SkillsGrid: React.FC = () => (
 
 export const AboutImage: React.FC = () => (
   <div className="relative w-full max-w-[343px] mx-auto">
-    <img src={asset('about.png')} alt={`Portrait of ${profile.name}`} className="relative ml-1 w-[339px] aspect-[339/507] object-cover" />
+    <img
+      src={asset('profile.webp')}
+      alt={`Portrait of ${profile.name}`}
+      width={1239}
+      height={1270}
+      loading="lazy"
+      className="relative ml-1 w-[339px] aspect-[339/507] object-cover object-[50%_0%]"
+    />
     <Dots className="absolute left-0 top-[59px]" />
     <Dots cols={5} rows={4} gap={13.33} className="absolute left-[223px] top-[279px] max-sm:hidden" />
     <div className="absolute left-12 right-6 bottom-0 h-px bg-primary" />

@@ -12,6 +12,17 @@ export const profile = {
   contactFormEndpoint: '',
 };
 
+// Short clip (5-10s) shown in the about-me photo frame instead of the photo.
+// Set embedUrl to '' to show the photo again. For YouTube, keep autoplay=1&mute=1 (browsers
+// only autoplay muted video) and loop=1&playlist=<same id> so it repeats.
+// aspect is the video's width / height: 16 / 9 for normal videos, 9 / 16 for Shorts.
+// Placeholder for now: Big Buck Bunny (Blender Foundation, CC BY).
+export const aboutVideo = {
+  embedUrl: 'https://www.youtube.com/embed/aqz-KE-bpKQ?autoplay=1&mute=1&loop=1&playlist=aqz-KE-bpKQ&controls=0&playsinline=1&rel=0',
+  title: 'Short intro video',
+  aspect: 16 / 9,
+};
+
 export const socials: SocialLink[] = [
   { name: 'GitHub', handle: '@BranBayou', href: 'https://github.com/BranBayou', icon: 'github' },
   { name: 'LinkedIn', handle: 'bran-baye', href: 'https://www.linkedin.com/in/bran-baye/', icon: 'linkedin' },

@@ -1,5 +1,5 @@
 import React from 'react';
-import { profile, socials, skills } from '../data';
+import { aboutVideo, profile, socials, skills } from '../data';
 import { Dots, OutlineSquare, SkillBlock, SocialIcon, asset } from './ui';
 
 export const Hero: React.FC = () => (
@@ -79,16 +79,46 @@ export const SkillsGrid: React.FC = () => (
   </div>
 );
 
+const FRAME_ASPECT = 339 / 507;
+
+/** Plays aboutVideo inside the tall photo frame, scaled to cover it (like object-fit: cover). */
+const AboutVideo: React.FC = () => {
+  const widthPct = Math.max(100, (aboutVideo.aspect / FRAME_ASPECT) * 100);
+  const heightPct = Math.max(100, (FRAME_ASPECT / aboutVideo.aspect) * 100);
+  return (
+    <div className="relative ml-1 w-[339px] max-w-full aspect-[339/507] overflow-hidden bg-black">
+      <iframe
+        src={aboutVideo.embedUrl}
+        title={aboutVideo.title}
+        allow="autoplay; encrypted-media; picture-in-picture"
+        loading="lazy"
+        tabIndex={-1}
+        className="absolute border-0 pointer-events-none"
+        style={{
+          width: `${widthPct}%`,
+          height: `${heightPct}%`,
+          left: `${(100 - widthPct) / 2}%`,
+          top: `${(100 - heightPct) / 2}%`,
+        }}
+      />
+    </div>
+  );
+};
+
 export const AboutImage: React.FC = () => (
   <div className="relative w-full max-w-[343px] mx-auto">
-    <img
-      src={asset('profile.webp')}
-      alt={`Portrait of ${profile.name}`}
-      width={1239}
-      height={1270}
-      loading="lazy"
-      className="relative ml-1 w-[339px] aspect-[339/507] object-cover object-[50%_0%]"
-    />
+    {aboutVideo.embedUrl ? (
+      <AboutVideo />
+    ) : (
+      <img
+        src={asset('profile.webp')}
+        alt={`Portrait of ${profile.name}`}
+        width={1239}
+        height={1270}
+        loading="lazy"
+        className="relative ml-1 w-[339px] aspect-[339/507] object-cover object-[50%_0%]"
+      />
+    )}
     <Dots className="absolute left-0 top-[59px]" />
     <Dots cols={5} rows={4} gap={13.33} className="absolute left-[223px] top-[279px] max-sm:hidden" />
     <div className="absolute left-12 right-6 bottom-0 h-px bg-primary" />

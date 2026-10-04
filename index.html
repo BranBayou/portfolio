@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berhanu | Senior Full Stack Engineer</title>
+    <link rel="icon" type="image/svg+xml" href="/portfolio/assets/logo.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              mono: ['"Fira Code"', 'monospace'],
+            },
+            colors: {
+              bg: '#282C33',
+              primary: '#C778DD',
+              muted: '#ABB2BF',
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: #282C33;
+        color: #ABB2BF;
+        font-family: 'Fira Code', monospace;
+        font-size: 16px;
+      }
+      ::-webkit-scrollbar {
+        width: 10px;
+        background: #282C33;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #ABB2BF66;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #C778DD;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

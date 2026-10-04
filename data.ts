@@ -19,57 +19,65 @@ export const socials: SocialLink[] = [
 
 export const projects: Project[] = [
   {
-    id: 1,
-    title: 'Nebula Dashboard',
-    description: 'A real-time analytics dashboard for SaaS platforms featuring drag-and-drop widgets, dark mode, and WebSocket data streaming.',
-    tags: ['React', 'TypeScript', 'D3.js', 'Socket.io'],
-    images: [
-      'https://picsum.photos/800/600?random=1',
-      'https://picsum.photos/800/600?random=10',
-      'https://picsum.photos/800/600?random=20',
-    ],
-    repoUrl: '#',
-    liveUrl: '#'
+    id: 6,
+    title: 'NUXTWEAR Fashion Store',
+    description: 'Full stack e-commerce app: Nuxt 3 front end with a Nitro API for products, filters, accounts (scrypt-hashed passwords, httpOnly sessions), and orders re-priced and validated on the server.',
+    tags: ['Nuxt 3', 'Nitro', 'TypeScript', 'Tailwind'],
+    images: ['listing/all-devices', 'detail/all-devices', 'listing/desktop', 'detail/laptop', 'listing/tablet', 'detail/phone'].map(
+      (name) => `${import.meta.env.BASE_URL}assets/projects/nuxt-ecommerce/${name}.webp`
+    ),
+    repoUrl: 'https://github.com/BranBayou/nuxt-ecommerce',
+    liveUrl: 'https://branbayou.github.io/nuxt-ecommerce/products/?gender=men'
   },
   {
-    id: 2,
-    title: 'E-Commerce Headless CMS',
-    description: 'High-performance storefront built with Next.js 14 and Shopify integration. Features ISR, image optimization, and Stripe checkout.',
-    tags: ['Next.js', 'GraphQL', 'Tailwind', 'Stripe'],
-    images: [
-      'https://picsum.photos/800/600?random=2',
-      'https://picsum.photos/800/600?random=11',
-      'https://picsum.photos/800/600?random=21',
-    ],
-    repoUrl: '#',
-    liveUrl: '#'
+    id: 5,
+    title: 'Dev Jobs',
+    description: 'Job portal where candidates search listings by title, location, and category, browse job details, and register or log in. Responsive from desktop to phone.',
+    tags: ['Vue', 'Pinia', 'Vue Router', 'Tailwind'],
+    images: ['all-devices', 'desktop', 'laptop', 'tablet', 'phone'].map(
+      (name) => `${import.meta.env.BASE_URL}assets/projects/dev-jobs/${name}.webp`
+    ),
+    repoUrl: 'https://github.com/BranBayou/dev-jobs',
+    liveUrl: 'https://branbayou.github.io/dev-jobs/'
   },
   {
-    id: 3,
-    title: 'AI Code Assistant',
-    description: 'VS Code extension and web interface for AI-assisted code generation using the Gemini API. Features syntax highlighting and diff view.',
-    tags: ['Electron', 'Python', 'Gemini API', 'React'],
-    images: [
-      'https://picsum.photos/800/600?random=3',
-      'https://picsum.photos/800/600?random=12',
-      'https://picsum.photos/800/600?random=22',
-    ],
-    repoUrl: '#',
-    liveUrl: '#'
+    id: 7,
+    title: 'Barcode & QR Generator',
+    description: 'Chrome extension (Manifest V3) published on the Chrome Web Store. Generates QR, CODE128, EAN-13, UPC-A and CODE39 codes in the side panel, creates random valid values, downloads PNGs, and scans any code on the page with crop-and-decode. Everything runs locally.',
+    tags: ['Chrome Extension', 'JavaScript', 'Manifest V3', 'ZXing'],
+    images: ['all-devices', 'desktop', 'laptop'].map(
+      (name) => `${import.meta.env.BASE_URL}assets/projects/barcode-generator/${name}.webp`
+    ),
+    repoUrl: 'https://github.com/BranBayou/barcode-generator',
+    liveUrl: 'https://chromewebstore.google.com/detail/flpfkfpbjhkickpjfhpgmplmcfjopgee'
   },
-  {
-    id: 4,
-    title: 'Three.js Portfolio Template',
-    description: 'An immersive 3D portfolio template for creative developers. Includes custom shaders, post-processing effects, and optimized assets.',
-    tags: ['Three.js', 'R3F', 'WebGL', 'GSAP'],
-    images: [
-      'https://picsum.photos/800/600?random=4',
-      'https://picsum.photos/800/600?random=13',
-      'https://picsum.photos/800/600?random=23',
-    ],
-    repoUrl: '#',
-    liveUrl: '#'
-  }
+
+  // {
+  //   id: 2,
+  //   title: 'E-Commerce Headless CMS',
+  //   description: 'High-performance storefront built with Next.js 14 and Shopify integration. Features ISR, image optimization, and Stripe checkout.',
+  //   tags: ['Next.js', 'GraphQL', 'Tailwind', 'Stripe'],
+  //   images: [
+  //     'https://picsum.photos/800/600?random=2',
+  //     'https://picsum.photos/800/600?random=11',
+  //     'https://picsum.photos/800/600?random=21',
+  //   ],
+  //   repoUrl: '#',
+  //   liveUrl: '#'
+  // },
+  // {
+  //   id: 3,
+  //   title: 'AI Code Assistant',
+  //   description: 'VS Code extension and web interface for AI-assisted code generation using the Gemini API. Features syntax highlighting and diff view.',
+  //   tags: ['Electron', 'Python', 'Gemini API', 'React'],
+  //   images: [
+  //     'https://picsum.photos/800/600?random=3',
+  //     'https://picsum.photos/800/600?random=12',
+  //     'https://picsum.photos/800/600?random=22',
+  //   ],
+  //   repoUrl: '#',
+  //   liveUrl: '#'
+  // }
 ];
 
 // Smaller repos shown under #small-projects on the works page (no screenshots).
@@ -125,21 +133,13 @@ export const smallProjects: Project[] = [
     repoUrl: repo('catalog-of-my-things'),
   },
   {
-    id: 107,
-    title: 'Barcode Generator',
-    description: 'Small JavaScript tool for generating barcodes in the browser.',
-    tags: ['JS', 'HTML', 'CSS'],
-    images: [],
-    repoUrl: repo('barcode-generator'),
-  },
-  {
     id: 108,
     title: 'To-do List',
     description: 'To-do list app styled with Tailwind CSS.',
     tags: ['JS', 'Tailwind'],
     images: [],
     repoUrl: repo('to-do-list-tailwind'),
-  },
+  }
 ];
 
 export const skills: SkillGroup[] = [

@@ -4,6 +4,14 @@ import { Project, SkillGroup, SocialLink } from '../types';
 
 export const asset = (name: string) => `${import.meta.env.BASE_URL}assets/${name}`;
 
+/** Brand wordmark ("BApps" = Berhanu Apps) with the initial in the accent colour. */
+export const BrandName: React.FC<{ name: string }> = ({ name }) => (
+  <span title="Berhanu Apps">
+    <span className="text-primary">{name.charAt(0)}</span>
+    {name.slice(1)}
+  </span>
+);
+
 export const Container: React.FC<{ children: React.ReactNode; className?: string }> = ({ children, className = '' }) => (
   <div className={`relative w-full max-w-[1024px] mx-auto px-4 lg:px-0 ${className}`}>{children}</div>
 );

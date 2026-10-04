@@ -7,7 +7,7 @@ export const Hero: React.FC = () => (
     <div className="flex flex-col gap-8 max-w-[537px]">
       <h1 className="text-[32px] font-semibold text-white leading-normal"> I'm {profile.name}, a <span className="text-primary">full stack engineer</span>, <span className="text-primary">web developer, </span>and <span className="text-primary">code whisperer</span></h1>
       <p className="text-muted leading-[25px] max-w-[463px]">
-        I craft pixel-perfect, accessible web experiences where clean code meets smooth animation.
+        I build and ship full stack web apps: Vue, Nuxt and React front ends backed by Node APIs, auth and databases.
       </p>
       <div>
         <a

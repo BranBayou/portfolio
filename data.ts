@@ -1,7 +1,7 @@
 import { Project, ExperienceItem, Certification, SkillGroup, SocialLink } from './types';
 
 export const profile = {
-  brand: 'Berhanu',
+  brand: 'BApps', // Berhanu Apps
   name: 'Berhanu',
   role: 'Senior full stack engineer',
   email: 'berhan.baye@gmail.com',
@@ -215,8 +215,8 @@ export const certifications: Certification[] = [
 export const funFacts: string[] = [
   'Based in *Addis Ababa, Ethiopia*',
   'Open to *relocation*',
-  'I speak *English* and *Spanish*',
-  'I optimize my *Vim* config for fun',
-  'I experiment with *WebGL* in my spare time',
-  'I contribute to *open-source*',
+  'I speak *English*, *Amharic*, and a little *French*',
+  'I love my *JavaScript* even though it gives me headaches sometimes',
+  'I hate *tiktok* but I love *TikTok* (the app)',
+  'I want to contribute to *open-source* projects but I usually end up just *forking* them and never *pull requesting*',
 ];

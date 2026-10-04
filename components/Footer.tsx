@@ -1,6 +1,6 @@
 import React from 'react';
 import { profile, socials } from '../data';
-import { Container, SocialIcon, asset } from './ui';
+import { BrandName, Container, SocialIcon, asset } from './ui';
 
 const Footer: React.FC = () => (
   <footer className="mt-[145px] border-t border-muted pt-8 pb-8">
@@ -10,7 +10,7 @@ const Footer: React.FC = () => (
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <span className="flex items-center gap-[9px] font-medium text-white">
               <img src={asset('logo.svg')} alt="" width={16} height={16} />
-              {profile.brand}
+              <BrandName name={profile.brand} />
             </span>
             <a href={`mailto:${profile.email}`} className="text-muted hover:text-white transition-colors">
               {profile.email}

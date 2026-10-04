@@ -18,7 +18,7 @@ const AboutPage: React.FC = () => (
             applications. I don't just write code; I solve problems and create experiences.
           </p>
           <p>
-            With over 6 years of experience in the React ecosystem, I've honed my skills in bridging the gap between
+            With over 6 years of experience in modern JavaScript ecosystem, I've honed my skills in bridging the gap between
             engineering and design. I thrive in environments where attention to detail is paramount and "good enough"
             is never the goal.
           </p>

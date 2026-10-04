@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Route } from '../types';
 import { profile, socials } from '../data';
-import { Container, SocialIcon, asset } from './ui';
+import { BrandName, Container, SocialIcon, asset } from './ui';
 
 export const navLinks: { route: Route; label: string; href: string }[] = [
   { route: 'home', label: 'home', href: '#/' },
@@ -19,7 +19,7 @@ const Header: React.FC<{ route: Route }> = ({ route }) => {
       <Container className="flex items-end justify-between pt-8 pb-2">
         <a href="#/" className="flex items-center gap-2 font-bold text-white">
           <img src={asset('logo.svg')} alt="" width={16} height={16} />
-          {profile.brand}
+          <BrandName name={profile.brand} />
         </a>
 
         <nav className="hidden md:flex gap-8">
@@ -55,7 +55,7 @@ const Header: React.FC<{ route: Route }> = ({ route }) => {
         <Container className="flex items-end justify-between pt-8 pb-2">
           <span className="flex items-center gap-2 font-bold text-white">
             <img src={asset('logo.svg')} alt="" width={16} height={16} />
-            {profile.brand}
+            <BrandName name={profile.brand} />
           </span>
           <button className="text-muted" onClick={() => setIsOpen(false)} aria-label="Close menu">
             <X className="size-6" />

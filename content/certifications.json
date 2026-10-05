@@ -1,0 +1,85 @@
+{
+  "viewAllUrl": "https://www.credential.net/profile/berhanubayetebebu240780/wallet",
+  "items": [
+    {
+      "name": "DOM Detective",
+      "issuer": "Google for Developers",
+      "date": "May 2026",
+      "verifyUrl": "https://developers.google.com/profile/u/109491434437748843113",
+      "image": "/assets/badges/dom-detective.svg",
+      "display": "badge"
+    },
+    {
+      "name": "Code Whisperer",
+      "issuer": "Google for Developers",
+      "date": "Nov 2025",
+      "verifyUrl": "https://developers.google.com/profile/u/109491434437748843113",
+      "image": "/assets/badges/code-whisperer.svg",
+      "display": "badge"
+    },
+    {
+      "name": "Chrome DevTools User",
+      "issuer": "Google for Developers",
+      "date": "Nov 2025",
+      "verifyUrl": "https://developers.google.com/profile/u/109491434437748843113",
+      "image": "/assets/badges/chrome-devtools-user.svg",
+      "display": "badge"
+    },
+    {
+      "name": "Google Developer Program Member",
+      "issuer": "Google for Developers",
+      "date": "Jun 2023",
+      "verifyUrl": "https://developers.google.com/profile/u/109491434437748843113",
+      "image": "/assets/badges/google-developer-program.svg",
+      "display": "badge"
+    },
+    {
+      "name": "Software Development Program",
+      "issuer": "Microverse",
+      "date": "Dec 2023",
+      "verifyUrl": "https://www.credential.net/ab715eb7-9e0a-4ab1-812e-267efc90473c",
+      "image": "/assets/badges/microverse-software-development-program.png",
+      "display": "badge"
+    },
+    {
+      "name": "Ruby on Rails Module",
+      "issuer": "Microverse",
+      "date": "Nov 2023",
+      "verifyUrl": "https://www.credential.net/806d88c2-d2b6-405d-a47f-6e7f2a15a551",
+      "image": "/assets/badges/microverse-ruby-on-rails.png",
+      "display": "badge"
+    },
+    {
+      "name": "Ruby/Databases Module",
+      "issuer": "Microverse",
+      "date": "Jul 2023",
+      "verifyUrl": "https://www.credential.net/bf3fe68d-c7e6-4096-be08-23ea507a5c40",
+      "image": "/assets/badges/microverse-ruby-databases.png",
+      "display": "badge"
+    },
+    {
+      "name": "React & Redux Module",
+      "issuer": "Microverse",
+      "date": "Jun 2023",
+      "verifyUrl": "https://www.credential.net/5db44ded-9a64-42ce-b2e8-d558dab5e6f6",
+      "image": "/assets/badges/microverse-react-redux.png",
+      "display": "badge"
+    },
+    {
+      "name": "JavaScript Module",
+      "issuer": "Microverse",
+      "date": "May 2023",
+      "verifyUrl": "https://www.credential.net/6ef2491f-2ffb-4365-9048-40239250cb96",
+      "image": "/assets/badges/microverse-javascript.png",
+      "display": "badge"
+    },
+    {
+      "name": "HTML/CSS Module",
+      "issuer": "Microverse",
+      "date": "Mar 2023",
+      "verifyUrl": "https://www.credential.net/5f21edba-f8e4-4877-ab91-2f401716310c",
+      "image": "/assets/badges/microverse-html-css.png",
+      "display": "badge"
+    }
+  ]
+}

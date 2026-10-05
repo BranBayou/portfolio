@@ -1,5 +1,5 @@
 import React from 'react';
-import { projects } from '../data';
+import { homeAboutParagraphs, projects } from '../data';
 import { Container, ProjectCard, SectionHeading } from '../components/ui';
 import ScrollReveal from '../components/ScrollReveal';
 import { AboutImage, ContactBlurb, Hero, MessageMeBox, PageEdgeDecor, Quote, SkillsGrid } from '../components/sections';
@@ -38,15 +38,9 @@ const HomePage: React.FC = () => (
           <div>
             <SectionHeading name="about-me" lineClassName="w-full max-w-[326px]" />
             <div className="-mt-[24px] text-muted leading-[26px] space-y-[26px]">
-              <p>Hello, I'm Berhanu!</p>
-              <p>
-                I'm a senior full stack engineer with a passion for building beautiful, functional, and accessible web
-                applications. I don't just write code; I solve problems and create experiences.
-              </p>
-              <p>
-                With over 6 years of experience in modern JavaScript ecosystem, I've honed my skills in bridging the gap
-                between engineering and design.
-              </p>
+              {homeAboutParagraphs.map((text) => (
+                <p key={text}>{text}</p>
+              ))}
             </div>
             <a
               href="#/about-me"

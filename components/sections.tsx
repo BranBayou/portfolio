@@ -1,20 +1,26 @@
 import React from 'react';
-import { aboutVideo, profile, socials, skills } from '../data';
+import { aboutVideo, contactBlurb, hero, profile, quote, socials, skills } from '../data';
 import { Dots, OutlineSquare, SkillBlock, SocialIcon, asset } from './ui';
 
 export const Hero: React.FC = () => (
   <section className="grid md:grid-cols-2 gap-10 md:gap-4 items-center pt-[62px]">
     <div className="flex flex-col gap-8 max-w-[537px]">
-      <h1 className="text-[32px] font-semibold text-white leading-normal"> I'm {profile.name}, a <span className="text-primary">full stack engineer</span>, <span className="text-primary">web developer, </span>and <span className="text-primary">code whisperer</span></h1>
-      <p className="text-muted leading-[25px] max-w-[463px]">
-        I build and ship full stack web apps: Vue, Nuxt and React front ends backed by Node APIs, auth and databases.
-      </p>
+      <h1 className="text-[32px] font-semibold text-white leading-normal">
+        I'm {profile.name}, a{' '}
+        {hero.roles.map((role, i) => (
+          <React.Fragment key={role}>
+            {i > 0 && (i === hero.roles.length - 1 ? (hero.roles.length > 2 ? ', and ' : ' and ') : ', ')}
+            <span className="text-primary">{role}</span>
+          </React.Fragment>
+        ))}
+      </h1>
+      <p className="text-muted leading-[25px] max-w-[463px]">{hero.subtitle}</p>
       <div>
         <a
           href="#/contacts"
           className="inline-flex px-4 py-2 border border-primary text-white font-medium hover:bg-primary/20 transition-colors"
         >
-          Contact me!!
+          {hero.buttonLabel}
         </a>
       </div>
     </div>
@@ -51,11 +57,11 @@ export const Quote: React.FC = () => (
     <div className="relative max-w-[712px]">
       <div className="relative border border-muted p-8">
         <img src={asset('quote.svg')} alt="" aria-hidden="true" className="absolute left-[10px] top-[-15px] w-[41.472px] h-[28.704px] bg-bg px-1" />
-        <p className="text-xl sm:text-2xl font-medium text-white">Weeks of programming can save you hours of planning.</p>
+        <p className="text-xl sm:text-2xl font-medium text-white">{quote.text}</p>
         <img src={asset('quote.svg')} alt="" aria-hidden="true" className="absolute right-[15.53px] bottom-[-15px] w-[41.472px] h-[28.704px] bg-bg px-1" />
       </div>
       <div className="flex justify-end">
-        <p className="border border-t-0 border-muted p-4 text-xl sm:text-2xl text-white">- 😂</p>
+        <p className="border border-t-0 border-muted p-4 text-xl sm:text-2xl text-white">- {quote.author}</p>
       </div>
     </div>
   </section>
@@ -147,7 +153,7 @@ export const MessageMeBox: React.FC = () => (
 
 export const ContactBlurb: React.FC = () => (
   <p className="max-w-[505px] font-medium text-muted leading-[26px]">
-    Whether you have a question, a project proposal, or just want to discuss the latest in web tech, my inbox is always open.
+    {contactBlurb}
   </p>
 );
 

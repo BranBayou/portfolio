@@ -1,0 +1,303 @@
+# Pages CMS configuration (https://pagescms.org): editing forms for content/*.json.
+# Saving in Pages CMS commits to the repo; the deploy workflow then publishes the site.
+
+media:
+  input: public/assets
+  output: /assets
+  categories: [image]
+
+content:
+  - name: site
+    label: Profile & home page
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: name
+        label: Your name
+        type: string
+        required: true
+      - name: brand
+        label: Logo text
+        type: string
+        description: Shown next to the logo. The first letter is highlighted in purple.
+      - name: role
+        label: Role
+        type: string
+        description: Shown in the footer.
+      - name: currentlyWorkingOn
+        label: Currently working on
+        type: string
+        description: Shown under the photo on the home page.
+      - name: email
+        label: Email
+        type: string
+      - name: location
+        label: Location
+        type: string
+      - name: hero
+        label: Home page intro
+        type: object
+        fields:
+          - name: roles
+            label: Roles (highlighted in purple)
+            type: string
+            list: true
+            description: Shown as "I'm Berhanu, a <role>, <role>, and <role>".
+          - name: subtitle
+            label: Text under the heading
+            type: text
+          - name: buttonLabel
+            label: Button text
+            type: string
+      - name: quote
+        label: Quote box
+        type: object
+        fields:
+          - name: text
+            label: Quote
+            type: text
+          - name: author
+            label: Author
+            type: string
+      - name: contactBlurb
+        label: Contact text
+        type: text
+        description: Shown in the contacts section and on the contacts page.
+      - name: socials
+        label: Social links
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - name: name
+            label: Site
+            type: string
+          - name: handle
+            label: Handle shown on the page
+            type: string
+          - name: href
+            label: Link
+            type: string
+          - name: icon
+            label: Icon
+            type: select
+            options:
+              values: [github, linkedin]
+      - name: contactFormEndpoint
+        label: Contact form endpoint (Formspree)
+        type: string
+        description: e.g. https://formspree.io/f/abcdwxyz. Leave empty to open the visitor's email app instead.
+
+  - name: projects
+    label: Projects
+    type: file
+    path: content/projects.json
+    format: json
+    fields:
+      - name: projects
+        label: Complete apps
+        description: Shown on the works page in this order; the first three also appear on the home page.
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: text
+          - name: tags
+            label: Tags
+            type: string
+            list: true
+          - name: images
+            label: Images
+            type: image
+            description: 1200x732 images fit the cards best. The first image is the cover; hovering cycles through the rest.
+            options:
+              multiple: true
+              path: projects
+          - name: liveUrl
+            label: Live link
+            type: string
+            description: Leave empty if there's no live version; the card then shows only a GitHub button.
+          - name: repoUrl
+            label: GitHub link
+            type: string
+      - name: smallProjects
+        label: Small projects
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: description
+            label: Description
+            type: text
+          - name: tags
+            label: Tags
+            type: string
+            list: true
+          - name: images
+            label: Images
+            type: image
+            description: 1200x732 images fit the cards best. The first image is the cover; hovering cycles through the rest.
+            options:
+              multiple: true
+              path: projects
+          - name: liveUrl
+            label: Live link
+            type: string
+            description: Leave empty if there's no live version; the card then shows only a GitHub button.
+          - name: repoUrl
+            label: GitHub link
+            type: string
+
+  - name: about
+    label: About me
+    type: file
+    path: content/about.json
+    format: json
+    fields:
+      - name: homeParagraphs
+        label: About text on the home page
+        type: text
+        list: true
+      - name: paragraphs
+        label: About text on the about-me page
+        type: text
+        list: true
+      - name: funFacts
+        label: Fun facts
+        type: string
+        list: true
+        description: Wrap words in *asterisks* to highlight them.
+      - name: video
+        label: Intro video
+        type: object
+        fields:
+          - name: embedUrl
+            label: Embed URL
+            type: string
+            description: >-
+              YouTube embed link, e.g. https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=VIDEO_ID&controls=0&playsinline=1&rel=0
+              (replace VIDEO_ID in both places). Leave empty to show your photo instead.
+          - name: title
+            label: Title (for screen readers)
+            type: string
+          - name: aspect
+            label: Shape
+            type: select
+            options:
+              values:
+                - name: "16:9"
+                  label: Landscape (16:9)
+                - name: "9:16"
+                  label: Vertical / Shorts (9:16)
+
+  - name: skills
+    label: Skills
+    type: file
+    path: content/skills.json
+    format: json
+    fields:
+      - name: groups
+        label: Skill groups
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: title
+            label: Group
+            type: string
+          - name: items
+            label: Skills
+            type: string
+            list: true
+
+  - name: experience
+    label: Experience
+    type: file
+    path: content/experience.json
+    format: json
+    fields:
+      - name: jobs
+        label: Jobs (most recent first)
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{role} · {company}"
+        fields:
+          - name: role
+            label: Role
+            type: string
+          - name: company
+            label: Company
+            type: string
+          - name: period
+            label: Period
+            type: string
+            description: e.g. Dec 2024 - Present
+          - name: description
+            label: Description
+            type: text
+
+  - name: certifications
+    label: Certifications
+    type: file
+    path: content/certifications.json
+    format: json
+    fields:
+      - name: viewAllUrl
+        label: '"View all" link'
+        type: string
+      - name: items
+        label: Certificates and badges
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name} · {issuer}"
+        fields:
+          - name: name
+            label: Name
+            type: string
+          - name: issuer
+            label: Issuer
+            type: string
+          - name: date
+            label: Date
+            type: string
+            description: e.g. Dec 2023
+          - name: verifyUrl
+            label: Verification link
+            type: string
+          - name: image
+            label: Image
+            type: image
+            options:
+              path: badges
+          - name: display
+            label: Image style
+            type: select
+            options:
+              values:
+                - name: badge
+                  label: Round badge (centered)
+                - name: certificate
+                  label: Full certificate (fills the box)

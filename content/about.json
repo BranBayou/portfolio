@@ -1,0 +1,26 @@
+{
+  "homeParagraphs": [
+    "Hello, I'm Berhanu!",
+    "I'm a senior full stack engineer with a passion for building beautiful, functional, and accessible web applications. I don't just write code; I solve problems and create experiences.",
+    "With over 6 years of experience in modern JavaScript ecosystem, I've honed my skills in bridging the gap between engineering and design."
+  ],
+  "paragraphs": [
+    "Hello, I'm Berhanu!",
+    "I'm a senior full stack engineer with a passion for building beautiful, functional, and accessible web applications. I don't just write code; I solve problems and create experiences.",
+    "With over 6 years of experience in modern JavaScript ecosystem, I've honed my skills in bridging the gap between engineering and design. I thrive in environments where attention to detail is paramount and \"good enough\" is never the goal.",
+    "When I'm not debugging race conditions or optimizing render cycles, you can find me experimenting with WebGL, contributing to open-source, or optimizing my Vim config."
+  ],
+  "funFacts": [
+    "Based in *Addis Ababa, Ethiopia*",
+    "Open to *relocation*",
+    "I speak *English*, *Amharic*, and a little *French*",
+    "I love my *JavaScript* even though it gives me headaches sometimes",
+    "I hate *tiktok* but I love *TikTok* (the app)",
+    "I want to contribute to *open-source* projects but I usually end up just *forking* them and never *pull requesting*"
+  ],
+  "video": {
+    "embedUrl": "https://www.youtube.com/embed/aqz-KE-bpKQ?autoplay=1&mute=1&loop=1&playlist=aqz-KE-bpKQ&controls=0&playsinline=1&rel=0",
+    "title": "Short intro video",
+    "aspect": "16:9"
+  }
+}

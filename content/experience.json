@@ -1,0 +1,34 @@
+{
+  "jobs": [
+    {
+      "role": "Frontend Developer",
+      "company": "Tidyl Group LLC · Upwork",
+      "period": "Dec 2024 - Present",
+      "description": "Converting Figma designs into pixel-accurate, responsive HTML and CSS pages."
+    },
+    {
+      "role": "Front End Developer",
+      "company": "Upwork client",
+      "period": "Jan 2024 - Dec 2025",
+      "description": "Long-term contract building and maintaining responsive front-end interfaces with Bootstrap, JavaScript, and Vue."
+    },
+    {
+      "role": "Vue.js Developer, POS Application",
+      "company": "Upwork client",
+      "period": "Oct 2024 - Dec 2024",
+      "description": "Built a point-of-sale application in Vue covering the product catalog, cart, payments, discounts, taxes, and returns."
+    },
+    {
+      "role": "Vue.js Developer",
+      "company": "Malefiya · Upwork",
+      "period": "Nov 2024",
+      "description": "Delivered features for a Vue.js project with Pinia for state management."
+    },
+    {
+      "role": "Chief Computer Laboratory Assistant",
+      "company": "Debre Tabor University",
+      "period": "Before freelancing",
+      "description": "Ran the university computer labs, supporting students and staff with hardware, software, and networking."
+    }
+  ]
+}

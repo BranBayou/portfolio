@@ -1,0 +1,75 @@
+{
+  "groups": [
+    {
+      "title": "Languages",
+      "items": [
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "C#",
+        "Ruby",
+        "PHP"
+      ]
+    },
+    {
+      "title": "Frontend",
+      "items": [
+        "React",
+        "Vue",
+        "Angular",
+        "Svelte",
+        "jQuery",
+        "Redux",
+        "Pinia"
+      ]
+    },
+    {
+      "title": "Backend",
+      "items": [
+        "Node.js",
+        "Rails",
+        ".NET"
+      ]
+    },
+    {
+      "title": "Databases",
+      "items": [
+        "PostgreSQL",
+        "SQL Server",
+        "MySQL",
+        "MongoDB"
+      ]
+    },
+    {
+      "title": "Styling",
+      "items": [
+        "Tailwind",
+        "Bootstrap",
+        "Handlebars"
+      ]
+    },
+    {
+      "title": "DevOps",
+      "items": [
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Bitbucket",
+        "CI/CD",
+        "Docker",
+        "AWS",
+        "Azure",
+        "GCP"
+      ]
+    },
+    {
+      "title": "AI Agents",
+      "items": [
+        "Claude Code",
+        "Codex",
+        "Cursor"
+      ]
+    }
+  ]
+}

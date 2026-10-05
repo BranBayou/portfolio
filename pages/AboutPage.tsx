@@ -1,5 +1,5 @@
 import React from 'react';
-import { certifications, credentialWalletUrl, experience, funFacts, skills } from '../data';
+import { aboutParagraphs, certifications, credentialWalletUrl, experience, funFacts, skills } from '../data';
 import { Button, Container, Dots, Highlighted, PageTitle, SectionHeading, SkillBlock, asset } from '../components/ui';
 import { AboutImage, PageEdgeDecor } from '../components/sections';
 import ScrollReveal from '../components/ScrollReveal';
@@ -12,20 +12,9 @@ const AboutPage: React.FC = () => (
 
       <section className="grid md:grid-cols-[515px_1fr] gap-12 md:gap-4 items-start -mt-[15px]">
         <div className="md:pt-[104px] text-muted leading-[25px] space-y-[25px]">
-          <p>Hello, I'm Berhanu!</p>
-          <p>
-            I'm a senior full stack engineer with a passion for building beautiful, functional, and accessible web
-            applications. I don't just write code; I solve problems and create experiences.
-          </p>
-          <p>
-            With over 6 years of experience in modern JavaScript ecosystem, I've honed my skills in bridging the gap between
-            engineering and design. I thrive in environments where attention to detail is paramount and "good enough"
-            is never the goal.
-          </p>
-          <p>
-            When I'm not debugging race conditions or optimizing render cycles, you can find me experimenting with
-            WebGL, contributing to open-source, or optimizing my Vim config.
-          </p>
+          {aboutParagraphs.map((text) => (
+            <p key={text}>{text}</p>
+          ))}
         </div>
         <AboutImage />
       </section>
@@ -85,7 +74,7 @@ const AboutPage: React.FC = () => (
                   {cert.kind === 'badge' ? (
                     <span className="flex h-full items-center justify-center">
                       <img
-                        src={asset(cert.image)}
+                        src={cert.image}
                         alt={`${cert.name} badge from ${cert.issuer}`}
                         width={170}
                         height={170}
@@ -95,7 +84,7 @@ const AboutPage: React.FC = () => (
                     </span>
                   ) : (
                     <img
-                      src={asset(cert.image)}
+                      src={cert.image}
                       alt={`${cert.name} certificate from ${cert.issuer}`}
                       width={600}
                       height={464}

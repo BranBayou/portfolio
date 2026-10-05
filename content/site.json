@@ -1,11 +1,10 @@
 {
-  "brand": "BApps",
   "name": "Berhanu",
+  "brand": "BApps",
   "role": "Senior full stack engineer",
+  "currentlyWorkingOn": ".NET Core Web Application",
   "email": "berhan.baye@gmail.com",
   "location": "Addis Ababa, Ethiopia",
-  "currentlyWorkingOn": "Portfolio",
-  "contactFormEndpoint": "",
   "hero": {
     "roles": [
       "full stack engineer",

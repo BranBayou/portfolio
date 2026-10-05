@@ -1,0 +1,142 @@
+{
+  "projects": [
+    {
+      "title": "NUXTWEAR Fashion Store",
+      "description": "Full stack e-commerce app: Nuxt 3 front end with a Nitro API for products, filters, accounts (scrypt-hashed passwords, httpOnly sessions), and orders re-priced and validated on the server.",
+      "tags": [
+        "Nuxt 3",
+        "Nitro",
+        "TypeScript",
+        "Tailwind"
+      ],
+      "images": [
+        "/assets/projects/nuxt-ecommerce/listing/all-devices.webp",
+        "/assets/projects/nuxt-ecommerce/detail/all-devices.webp",
+        "/assets/projects/nuxt-ecommerce/listing/desktop.webp",
+        "/assets/projects/nuxt-ecommerce/detail/laptop.webp",
+        "/assets/projects/nuxt-ecommerce/listing/tablet.webp",
+        "/assets/projects/nuxt-ecommerce/detail/phone.webp"
+      ],
+      "repoUrl": "https://github.com/BranBayou/nuxt-ecommerce",
+      "liveUrl": "https://branbayou.github.io/nuxt-ecommerce/products/?gender=men"
+    },
+    {
+      "title": "Dev Jobs",
+      "description": "Job portal where candidates search listings by title, location, and category, browse job details, and register or log in. Responsive from desktop to phone.",
+      "tags": [
+        "Vue",
+        "Pinia",
+        "Vue Router",
+        "Tailwind"
+      ],
+      "images": [
+        "/assets/projects/dev-jobs/all-devices.webp",
+        "/assets/projects/dev-jobs/desktop.webp",
+        "/assets/projects/dev-jobs/laptop.webp",
+        "/assets/projects/dev-jobs/tablet.webp",
+        "/assets/projects/dev-jobs/phone.webp"
+      ],
+      "repoUrl": "https://github.com/BranBayou/dev-jobs",
+      "liveUrl": "https://branbayou.github.io/dev-jobs/"
+    },
+    {
+      "title": "Barcode & QR Generator",
+      "description": "Chrome extension (Manifest V3) published on the Chrome Web Store. Generates QR, CODE128, EAN-13, UPC-A and CODE39 codes in the side panel, creates random valid values, downloads PNGs, and scans any code on the page with crop-and-decode. Everything runs locally.",
+      "tags": [
+        "Chrome Extension",
+        "JavaScript",
+        "Manifest V3",
+        "ZXing"
+      ],
+      "images": [
+        "/assets/projects/barcode-generator/all-devices.webp",
+        "/assets/projects/barcode-generator/desktop.webp",
+        "/assets/projects/barcode-generator/laptop.webp"
+      ],
+      "repoUrl": "https://github.com/BranBayou/barcode-generator",
+      "liveUrl": "https://chromewebstore.google.com/detail/flpfkfpbjhkickpjfhpgmplmcfjopgee"
+    }
+  ],
+  "smallProjects": [
+    {
+      "title": "My Budget",
+      "description": "Budget manager with a Rails back end: transactions grouped by category so you can see how much you spent and on what.",
+      "tags": [
+        "Ruby",
+        "Rails",
+        "PostgreSQL"
+      ],
+      "images": [],
+      "repoUrl": "https://github.com/BranBayou/my-budget",
+      "liveUrl": ""
+    },
+    {
+      "title": "Space Travelers",
+      "description": "Book rockets and join space missions using real-time data from the SpaceX API.",
+      "tags": [
+        "React",
+        "Redux",
+        "JS"
+      ],
+      "images": [],
+      "repoUrl": "https://github.com/BranBayou/space-travelers",
+      "liveUrl": ""
+    },
+    {
+      "title": "Hello Rails React",
+      "description": "Rails app with a React front end bundled through Webpack and jsbundling-rails.",
+      "tags": [
+        "Ruby",
+        "Rails",
+        "React"
+      ],
+      "images": [],
+      "repoUrl": "https://github.com/BranBayou/hello-rails-react",
+      "liveUrl": ""
+    },
+    {
+      "title": "Vet Clinic Database",
+      "description": "Relational database for a vet clinic: schema, queries and joins in PostgreSQL.",
+      "tags": [
+        "PostgreSQL",
+        "SQL"
+      ],
+      "images": [],
+      "repoUrl": "https://github.com/BranBayou/vet-clinic-database",
+      "liveUrl": ""
+    },
+    {
+      "title": "Next Recipes",
+      "description": "Recipe app built with Next.js and TypeScript.",
+      "tags": [
+        "Next.js",
+        "TS"
+      ],
+      "images": [],
+      "repoUrl": "https://github.com/BranBayou/next-recipes",
+      "liveUrl": ""
+    },
+    {
+      "title": "Catalog of My Things",
+      "description": "Ruby console app for cataloguing books, music albums and games.",
+      "tags": [
+        "Ruby",
+        "OOP"
+      ],
+      "images": [],
+      "repoUrl": "https://github.com/BranBayou/catalog-of-my-things",
+      "liveUrl": ""
+    },
+    {
+      "title": "To-do List",
+      "description": "To-do list app styled with Tailwind CSS.",
+      "tags": [
+        "JS",
+        "Tailwind"
+      ],
+      "images": [],
+      "repoUrl": "https://github.com/BranBayou/to-do-list-tailwind",
+      "liveUrl": ""
+    }
+  ]
+}

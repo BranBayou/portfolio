@@ -5,7 +5,7 @@ import { Dots, OutlineSquare, SkillBlock, SocialIcon, asset } from './ui';
 export const Hero: React.FC = () => (
   <section className="grid md:grid-cols-2 gap-8 md:gap-4 items-center pt-6 md:pt-[62px]">
     <div className="flex flex-col gap-5 md:gap-8 max-w-[537px]">
-      <h1 className="text-2xl sm:text-[28px] md:text-[32px] font-semibold text-white leading-snug md:leading-normal text-balance">
+      <h1 className="text-xl sm:text-2xl md:text-[32px] font-semibold text-white leading-snug md:leading-normal text-balance">
         I'm {profile.name}, a{' '}
         {hero.roles.map((role, i) => (
           <React.Fragment key={role}>
@@ -14,11 +14,11 @@ export const Hero: React.FC = () => (
           </React.Fragment>
         ))}
       </h1>
-      <p className="text-muted text-[15px] md:text-base leading-6 md:leading-[25px] max-w-[463px]">{hero.subtitle}</p>
+      <p className="text-muted text-sm md:text-base leading-6 md:leading-[25px] max-w-[463px]">{hero.subtitle}</p>
       <div>
         <a
           href="#/contacts"
-          className="inline-flex px-4 py-2 border border-primary text-white font-medium hover:bg-primary/20 transition-colors"
+          className="inline-flex px-4 py-2 text-sm md:text-base border border-primary text-white font-medium hover:bg-primary/20 transition-colors"
         >
           {hero.buttonLabel}
         </a>

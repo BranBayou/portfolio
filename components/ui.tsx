@@ -46,7 +46,7 @@ export const SectionHeading: React.FC<{ name: string; lineClassName?: string; ch
 }) => (
   <div className="flex items-center justify-between gap-4 mb-12">
     <div className="flex items-center gap-4 flex-1">
-      <h2 className="text-[32px] font-medium text-white whitespace-nowrap">
+      <h2 className="text-2xl md:text-[32px] font-medium text-white whitespace-nowrap">
         <span className="text-primary">#</span>
         {name}
       </h2>
@@ -57,12 +57,12 @@ export const SectionHeading: React.FC<{ name: string; lineClassName?: string; ch
 );
 
 export const PageTitle: React.FC<{ name: string; subtitle: string }> = ({ name, subtitle }) => (
-  <div className="pt-[50px] pb-[50px]">
-    <h1 className="text-[32px] font-semibold text-white">
+  <div className="py-8 md:py-[50px]">
+    <h1 className="text-2xl md:text-[32px] font-semibold text-white">
       <span className="text-primary">/</span>
       {name}
     </h1>
-    <p className="mt-[14px] text-white">{subtitle}</p>
+    <p className="mt-[14px] text-sm md:text-base text-white">{subtitle}</p>
   </div>
 );
 

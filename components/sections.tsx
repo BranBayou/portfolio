@@ -3,9 +3,9 @@ import { aboutVideo, contactBlurb, hero, profile, quote, socials, skills } from 
 import { Dots, OutlineSquare, SkillBlock, SocialIcon, asset } from './ui';
 
 export const Hero: React.FC = () => (
-  <section className="grid md:grid-cols-2 gap-10 md:gap-4 items-center pt-[62px]">
-    <div className="flex flex-col gap-8 max-w-[537px]">
-      <h1 className="text-[32px] font-semibold text-white leading-normal">
+  <section className="grid md:grid-cols-2 gap-8 md:gap-4 items-center pt-6 md:pt-[62px]">
+    <div className="flex flex-col gap-5 md:gap-8 max-w-[537px]">
+      <h1 className="text-2xl sm:text-[28px] md:text-[32px] font-semibold text-white leading-snug md:leading-normal text-balance">
         I'm {profile.name}, a{' '}
         {hero.roles.map((role, i) => (
           <React.Fragment key={role}>
@@ -14,7 +14,7 @@ export const Hero: React.FC = () => (
           </React.Fragment>
         ))}
       </h1>
-      <p className="text-muted leading-[25px] max-w-[463px]">{hero.subtitle}</p>
+      <p className="text-muted text-[15px] md:text-base leading-6 md:leading-[25px] max-w-[463px]">{hero.subtitle}</p>
       <div>
         <a
           href="#/contacts"
@@ -25,12 +25,12 @@ export const Hero: React.FC = () => (
       </div>
     </div>
 
-    <div className="relative mx-auto md:mx-0 w-full max-w-[469px]">
+    <div className="relative order-first md:order-none mx-auto md:mx-0 w-full max-w-[340px] sm:max-w-[469px]">
       <img
         src={asset('logo-outline.svg')}
         alt=""
         aria-hidden="true"
-        className="absolute left-0 top-[84px] size-[155px]"
+        className="absolute left-0 top-[56px] size-[110px] sm:top-[84px] sm:size-[155px]"
       />
       <div className="relative ml-3 aspect-[457/386] overflow-hidden">
         <img
@@ -44,7 +44,7 @@ export const Hero: React.FC = () => (
       <Dots className="absolute right-4 top-[246px] max-sm:hidden" />
       <div className="relative mx-auto -mt-px w-[88%] flex items-center gap-[10px] p-2 border border-muted bg-bg text-muted">
         <span className="size-4 shrink-0 bg-primary border border-primary" />
-        <p className="font-medium">
+        <p className="text-sm sm:text-base font-medium">
           Currently working on <span className="font-semibold text-white">{profile.currentlyWorkingOn}</span>
         </p>
       </div>

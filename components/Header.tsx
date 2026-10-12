@@ -61,7 +61,7 @@ const Header: React.FC<{ route: Route }> = ({ route }) => {
             <X className="size-6" />
           </button>
         </Container>
-        <Container className="flex flex-col gap-8 pt-12 text-[32px]">
+        <Container className="flex flex-col gap-5 pt-8 text-xl">
           {navLinks.map((link) => (
             <a
               key={link.route}

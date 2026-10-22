@@ -1,5 +1,5 @@
 import React from 'react';
-import { aboutVideo, contactBlurb, hero, profile, quote, socials, skills } from '../data';
+import { aboutPhoto, aboutVideo, contactBlurb, hero, profile, quote, socials, skills } from '../data';
 import { Dots, OutlineSquare, SkillBlock, SocialIcon, asset } from './ui';
 
 export const Hero: React.FC = () => (
@@ -34,7 +34,7 @@ export const Hero: React.FC = () => (
       />
       <div className="relative ml-3 aspect-[457/386] overflow-hidden">
         <img
-          src={asset('profile.webp')}
+          src={profile.photo}
           alt={`Portrait of ${profile.name}`}
           width={1239}
           height={1270}
@@ -117,7 +117,7 @@ export const AboutImage: React.FC = () => (
       <AboutVideo />
     ) : (
       <img
-        src={asset('profile.webp')}
+        src={aboutPhoto}
         alt={`Portrait of ${profile.name}`}
         width={1239}
         height={1270}

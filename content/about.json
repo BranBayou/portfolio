@@ -18,6 +18,7 @@
     "I hate *tiktok* but I love *TikTok* (the app)",
     "I want to contribute to *open-source* projects but I usually end up just *forking* them and never *pull requesting*"
   ],
+  "photo": "/assets/profile.webp",
   "video": {
     "embedUrl": "https://www.youtube.com/embed/aqz-KE-bpKQ?autoplay=1&mute=1&loop=1&playlist=aqz-KE-bpKQ&controls=0&playsinline=1&rel=0",
     "title": "Short intro video",

@@ -29,6 +29,10 @@ content:
         label: Currently working on
         type: string
         description: Shown under the photo on the home page.
+      - name: photo
+        label: Home page photo
+        type: image
+        description: The portrait at the top of the home page. Wide images (about 457x386) fit best; the top of the image is kept when cropping.
       - name: email
         label: Email
         type: string
@@ -179,6 +183,10 @@ content:
         label: About text on the about-me page
         type: text
         list: true
+      - name: photo
+        label: About photo
+        type: image
+        description: Tall portrait (about 339x507) shown in the about section when there's no intro video.
       - name: funFacts
         label: Fun facts
         type: string

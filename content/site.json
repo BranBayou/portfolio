@@ -5,6 +5,7 @@
   "email": "berhan.baye@gmail.com",
   "location": "Addis Ababa, Ethiopia",
   "currentlyWorkingOn": "Portfolio",
+  "photo": "/assets/profile.webp",
   "contactFormEndpoint": "",
   "hero": {
     "roles": [

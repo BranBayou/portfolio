@@ -21,6 +21,7 @@ export const profile = {
   email: site.email,
   location: site.location,
   currentlyWorkingOn: site.currentlyWorkingOn,
+  photo: assetUrl(site.photo),
   // Formspree endpoint for the contact form, e.g. 'https://formspree.io/f/abcdwxyz'.
   // Empty: the form opens the visitor's email app instead.
   contactFormEndpoint: site.contactFormEndpoint,
@@ -40,6 +41,9 @@ export const aboutVideo = {
   title: about.video.title,
   aspect: aspectW / aspectH || 16 / 9,
 };
+
+// Shown in the about section when there's no intro video.
+export const aboutPhoto = assetUrl(about.photo);
 
 export const homeAboutParagraphs: string[] = about.homeParagraphs;
 export const aboutParagraphs: string[] = about.paragraphs;

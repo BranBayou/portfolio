@@ -36,3 +36,39 @@
     }
   ]
 }
+{
+  "name": "Berhanu",
+  "brand": "BApps",
+  "role": "Senior full stack engineer",
+  "currentlyWorkingOn": ".NET Core Web Application",
+  "email": "berhan.baye@gmail.com",
+  "location": "Addis Ababa, Ethiopia",
+  "hero": {
+    "roles": [
+      "full stack engineer",
+      "web developer",
+      "code whisperer"
+    ],
+    "subtitle": "I build and ship full stack web apps: Vue, Nuxt and React front ends backed by Node APIs, auth and databases.",
+    "buttonLabel": "Contact me!!"
+  },
+  "quote": {
+    "text": "Weeks of programming can save you hours of planning.",
+    "author": "😂"
+  },
+  "contactBlurb": "Whether you have a question, a project proposal, or just want to discuss the latest in web tech, my inbox is always open.",
+  "socials": [
+    {
+      "name": "GitHub",
+      "handle": "@BranBayou",
+      "href": "https://github.com/BranBayou",
+      "icon": "github"
+    },
+    {
+      "name": "LinkedIn",
+      "handle": "bran-baye",
+      "href": "https://www.linkedin.com/in/bran-baye/",
+      "icon": "linkedin"
+    }
+  ]
+}

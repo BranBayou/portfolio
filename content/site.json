@@ -4,14 +4,14 @@
   "role": "Senior full stack engineer",
   "email": "berhan.baye@gmail.com",
   "location": "Addis Ababa, Ethiopia",
-  "currentlyWorkingOn": "Portfolio",
+  "currentlyWorkingOn": ".NET Core Web Application",
   "photo": "/assets/profile.webp",
   "contactFormEndpoint": "",
   "hero": {
     "roles": [
       "full stack engineer",
       "web developer",
-      "code whisperer"
+      "code whisperer."
     ],
     "subtitle": "I build and ship full stack web apps: Vue, Nuxt and React front ends backed by Node APIs, auth and databases.",
     "buttonLabel": "Contact me!!"
